@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="en" oncontextmenu="window.alert('Not allowed.');return false;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="w  Idth=device-w  Idth, initial-scale=1.0">
+    <title>CSS Subjective</title>
+    <link rel="website icon" type="jpg" href="../../../../../image/mslogo.jpg" style="border-radius: 50%;">
+
+    <link rel="website icon" type="jpg" href="image/mslogo.jpg" style="border-radius: 50%;">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="accordion_container">
+    <div   Id="heading">
+        <font color="#">CSS </font><br>
+        <marquee>All these  s are the most important for interview placement.</marquee>
+
+
+    </div>
+        <div class="accordion-item">
+            <button class="accordion-header"><b></b> What is CSS ?</button>
+            <div class="accordion-content">
+                <p>CSS Stand for <b> cascading style sheet.</b> It is a language that is used to describe the style of a document and represent of a document written in HTML or XML. It allows web developers to control aspects like <b>Layout, Colors, Fonts </b> and <b>Spacing</b> of HTML elements.  
+                </p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-header"><b></b>Why we use  CSS ?</button>
+            <div class="accordion-content">
+                <p>Because CSS to control the layout, colors, fonts and overall visual appearance of web pages, making them more attractive and user friendly.</p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-header"><b></b>What are the different ways to apply CSS to a web page?</button>
+            <div class="accordion-content">
+                <p>CSS can be applied in three ways: <br><br>
+                <b>1. Inline→</b> Directly within  HTML element. <br> <br>
+                <b>2. Internal stylesheet→</b> Within a &lt;style&gt; elementin the &lt;head&gt; section of an HTML document. <br> <br>
+                <b>3. External stylesheet→</b> linked to an HTML document using the &lt;link&gt; element.
+                 </p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-header"><b></b>How to Implement of inline style ?</button>
+            <div class="accordion-content">
+                <p>Inline styles are CSS styles applied Directly to an indiv  Idual HTML element using the style attribute. <br><br>
+                <div   Id="ans_box">
+                    &lt;p style="color:red; font-size:50px; face:calibri;"&gt;This is a paragraph with inline styles. &lt;/p&gt;
+                </div>
+                </p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-header"><b></b>What is an internal stylesheet?</button>
+            <div class="accordion-content">
+                <p>→ An internal stylesheet is CSS code written within a &lt;style&gt; element in the &lt;head&gt; section of HTML document. <br> <br>
+                → It applies styles to that particular HTML document only. </p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-header"><b></b>What is an external stylesheet?</button>
+            <div class="accordion-content">
+                <p>→ An external stylesheet is a separate CSS file linked to an HTML document using the &lt;link&gt; element. <br> <br>
+                → It allows styles to be applied scross multiple HTML document. </p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-header"><b></b>How do you link a CSS file to an HTML document?</button>
+            <div class="accordion-content">
+                <p>
+                    You can link a CSS file to an HTML document using the &lt;link&gt; element within the &lt;head&gt; section of the HTML document.</p> <br>
+                    <div   Id="ans_box">
+                        &lt;link rel="stylesheet" type="text/css" href="style.css"&gt;
+                    </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-header"><b></b>What is Selector ?</button>
+            <div class="accordion-content">
+                <p>A CSS selector is a pattern that is used to select and style HTML elements based on various criteria such as element type,   Id, Classes attributes, and relationship with other elements.</p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-header"><b></b>Types of selector</button>
+            <div class="accordion-content">
+                <p> There are four types of selector <br> 
+                
+                    1. Universal selector <br>
+                    2.   Id selector <br>
+                    3. Element selector <br>
+                    4. Class selector <br>
+                </p>
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <button class="accordion-header"><b></b>Universal Selector (*)</button>
+            <div class="accordion-content">
+                <p>Universal Selector is select all elements on the page. <br> <br>
+                    <div   Id="ans_box">
+
+                        *{ <br>
+                            &nbsp;&nbsp;&nbsp;property: value; <br>
+                        }
+                    </div>
+                </p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <button class="accordion-header"><b></b>Type Selector</button>
+            <div class="accordion-content">
+                <p>Type Selector is selects all elements of a specific type. <br>
+                    <div   Id="ans_box">
+
+                        p{ <br>
+                            &nbsp;&nbsp;property: value; <br>
+                        }
+                    </div>
+                </p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <button class="accordion-header"><b></b>Class Selector (.)</button>
+            <div class="accordion-content">
+                <p>Class Selector is selects elements with a specific class attribute. <br>
+                    <div   Id="ans_box">
+
+                        .classname{ <br>
+                            &nbsp;&nbsp;property: value; <br>
+                        }
+                    </div>
+                </p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <button class="accordion-header"><b></b>  Id Selector (#)</button>
+            <div class="accordion-content">
+                <p>  Id Selector is selects elements with a specific   Id attribute. <br>
+                    <div   Id="ans_box">
+
+                        #  Idname{ <br>
+                            &nbsp;&nbsp;property: value; <br>
+                        }
+                    </div>
+                </p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <button class="accordion-header"><b></b>Attribute Selector</button>
+            <div class="accordion-content">
+                <p>Attribute Selector is selects elements based on the presence or value of an attribute. <br>
+                    <div   Id="ans_box">
+
+                        inuput[type="text"]{ <br>
+                            &nbsp;&nbsp;property: value; <br>
+                        }
+                    </div>
+                </p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <button class="accordion-header"><b></b>Pseudo-classes (.)</button>
+            <div class="accordion-content">
+                <p>Pseudo-classes is selects elements based on their special state. <br>
+                    <div   Id="ans_box">
+
+                        a:hover{ <br>
+                            &nbsp;&nbsp;property: value; <br>
+                        }
+                    </div>
+                </p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <button class="accordion-header"><b></b>Pseduo-element</button>
+            <div class="accordion-content">
+                <p>Pseduo-element is selects specific parts of an elements content. <br>
+                    <div   Id="ans_box">
+
+                        p::before{ <br>
+                            &nbsp;&nbsp;content: Prefix; <br>
+                        }
+                    </div>
+                </p>
+            </div>
+        </div><div class="accordion-item">
+            <button class="accordion-header"><b></b>Descendant Selector (Space)</button>
+            <div class="accordion-content">
+                <p>Descendant Selector selects elements that are descendant of another element. <br>
+                    <div   Id="ans_box">
+
+                        div p{ <br>
+                            &nbsp;&nbsp;property: value; <br>
+                        }
+                    </div>
+                </p>
+            </div>
+        </div>
+            <div><div class="accordion-item">
+                <button class="accordion-header"><b></b>Child Selector (>)</button>
+                <div class="accordion-content">
+                    <p>Child Selector selects elements that are children of another element. <br>
+                        <div   Id="ans_box">
+
+                            div > p{ <br>
+                            &nbsp;&nbsp;property: value; <br>
+                            }
+                        </div>
+                     </p>
+                </div>
+        </div>
+</div><div class="accordion-item">
+    <button class="accordion-header"><b></b>Adjacent Sibling Selector (+)</button>
+    <div class="accordion-content">
+        <p>Adjacent Sibling Selector selects the first elements that immediately follows a specified element, and both elements must have the same parent. <br>
+            <div   Id="ans_box">
+
+                h1 + p{ <br>
+                    &nbsp;&nbsp;  property: value; <br>
+                }
+            </div>
+        </p>
+    </div>
+</div>
+<div><div class="accordion-item">
+    <button class="accordion-header"><b></b>General Sibling Selector (~)</button>
+    <div class="accordion-content">
+        <p>General Sibling Selector selects element that are Sibling of a specied element. <br>
+            <div   Id="ans_box">
+
+                h2 ~ p{ <br>
+                    &nbsp;&nbsp;    property: value; <br>
+                }
+            </div>
+        </p>
+    </div>
+</div>
+
+        <div class="accordion-item">
+        <button class="accordion-header"><b></b>What is &lt;style&gt; tag?</button>
+            <div class="accordion-content">
+                <p>The &lt;style&gt; tag is used to define style information (css) for a document inside the &lt;style&gt; element you specify how HTML elements should render in a browser.</p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+        <button class="accordion-header"><b></b>What is color system?</button>
+        <div class="accordion-content">
+            <p>The color css property sets the foreground color value an element's text and text decorations and sets the current color value.</p>
+        </div>
+</div>
+
+
+
+<!-- <div class="accordion-item">
+    <button class="accordion-header"><b></b>Types of selector</button>
+    <div class="accordion-content">
+        <p> There are four types of selector <br> 
+        <ol type="1">
+            1. Universal selector <br>
+            2.   Id selector <br>
+            3. element selector <br>
+            4. class selector <br>
+        </ol></p>
+    </div>
+</div> -->
+
+
+<div class="accordion-item">
+    <button class="accordion-header"><b></b>How to implement Selectors ?</button>
+    <div class="accordion-content">
+        <p> ○ Type:→ element <br>
+            ○ Class:→ .classname <br>
+            ○   Id:→ #  Idname <br>
+            ○ Universal:→ [attribute=value] <br>
+            ○ Pseduo-class:→ :hover <br>
+            ○ Pseduo-element:→ ::after, ::before <br>
+            
+        </p>
+    </div>
+</div>
+
+<div class="accordion-item">
+    <button class="accordion-header"><b></b>Properties of CSS</button>
+    <div class="accordion-content">
+        <p>
+            ○ Color→ color, background-color <br>
+            ○ Text→ font-size, font-family, text-align <br>
+            ○ Box Model→ width, height, margin, padding, border <br>
+            ○ Display→ display, position, top, left <br>
+            ○ Flexbox→ display:flex;, &nbsp; Justify-content, align-items <br>
+            ○ Grid→ display:grid; &nbsp; grid-template-columns, &nbsp; grid-teplate-rows. 
+        </p>
+    </div>
+</div>
+
+<div class="accordion-item">
+    <button class="accordion-header"><b></b>Units of CSS</button>
+    <div class="accordion-content">
+        <p>
+            ○ Absolute→ px, pt <br>
+            ○ Relative→ %, em, rem, vw, vh;
+        </p>
+    </div>
+</div>
+
+<div class="accordion-item">
+    <button class="accordion-header"><b></b>Colors Properties in CSS</button>
+    <div class="accordion-content">
+        <p>
+            ○ Named→ red, blue, purple, etc. <br>
+            ○ Hex→ #ff0000 <br>
+            ○ RGB→ rgb(255,0,0) <br>
+            ○ RGBA→ rgba(255,0,0,0.5) <br><br>
+            <b>Note</b> <br>
+            • Hex: Hexadecimal <br>
+            • RGB: Red, Green, Blue (R.value, G.value, B.Value)<br>
+            • RGBA: Red, Green, Blue, Alpha (R.value, G.value, B.Value, A.value)
+        </p>
+    </div>
+</div>
+
+<div class="accordion-item">
+    <button class="accordion-header"><b></b>Box Model Properties </button>
+    <div class="accordion-content">
+        <p>
+            ○ Content→ width, height <br>
+            ○ Padding→ Space inside border <br>
+            ○ Border→ Surrounds padding <br>
+            ○ Margin→ Space outside border 
+        </p>
+    </div>
+</div>
+
+<div class="accordion-item">
+    <button class="accordion-header"><b></b> Background Properties in CSS</button>
+    <div class="accordion-content">
+        <p>
+            <b>○ Background-color </b> → Red, #323232, rgba(0,0,0,0.5) <br><br>
+            <b>○ Background-image →</b>  url(imagename.jpg) <br><br>
+            <b>○ Background-size → </b> 200px 200px <br><br>
+            <b>○ Background-position →</b>  top left, top center, top right, center, bottom, left, bottom center <br><br>
+            <b>○ Background-repeat → </b> repeat, no-repeat, repeat-x, repeat-y <br><br>
+            <b>○ Background-attachment → </b> scroll, fixed <br> 
+        </p>
+    </div>
+</div>
+
+<div class="accordion-item">
+    <button class="accordion-header"><b></b> Dimensional Properties and its value  </button>
+    <div class="accordion-content">
+        <p>
+            ○ width → 200px; <br>
+            ○ height → 200px; <br>
+            ○ border-width → 2px  <br>
+            ○ border-style → none, solid, dotted, dashed, groove,  insert, outset, etc. <br>
+            ○ border-color → red, #323232, rgb(120,120,150); <br>
+            ○ float → left, right <br> 
+            ○ padding → 10px; <br>
+            ○ padding-top → 10px; <br>
+            ○ padding-bottom → 10px; <br>
+            ○ padding-left → 10px; <br> 
+            ○ padding-right → 10px; <br>
+            ○ margin → 20px; <br>
+            ○ margin-top → 10px; <br>
+            ○ margin-bottom → 10px; <br>
+            ○ margin-left → 10px; <br> 
+            ○ margin-right → 10px; <br>
+            ○ box-sizing → border-box; <br>
+            ○ box-shadow → 0px 0px 10px #ccc; <br>
+            ○ border radius → 25px; <br>
+            ○ border radius → 40px(top-left) 60px(top-right) 20px(bottom-right) 45px(bottom-left)
+            ○ display → none, block, inline, inline-block; <br>
+            ○ float → left, right; <br>
+            ○ list-style → circle, square, none;
+        </p>
+    </div>
+</div>
+
+<div class="accordion-item">
+    <button class="accordion-header"><b></b> Pseduo class</button>
+    <div class="accordion-content">
+        <p>
+           → :hover &nbsp;&nbsp;&nbsp;&nbsp; → :focus <br>
+           → :active &nbsp;&nbsp;&nbsp;&nbsp; → :visited <br>
+           → :unvisited &nbsp;&nbsp;&nbsp;&nbsp; → :checked <br>
+           → :disabled &nbsp;&nbsp;&nbsp;&nbsp; → :empty <br>
+           → :enabled &nbsp;&nbsp;&nbsp;&nbsp; → :first-child <br>
+           → :first-of-type &nbsp;&nbsp;&nbsp;&nbsp; → :in-range <br>
+           → :last-child &nbsp;&nbsp;&nbsp;&nbsp; → :root <br>
+        </p>
+    </div>
+</div>
+
+<div class="accordion-item">
+    <button class="accordion-header"><b></b> Overfollow and cursor </button>
+    <div class="accordion-content">
+        <p>
+            • overflow → hidden, scroll <br>
+            • overflow-x → hidden, scroll (x-axis scrollbar) <br>
+            • overflow-y → hidden, scroll (y-axis scrollbar) <br>
+            • cursor → pointer, help, move, not-allowded, pointer, progress, zoom-in, zoom-out, resize, etc..
+        </p>
+    </div>
+</div>
+
+<div class="accordion-item">
+    <button class="accordion-header"><b></b> Position Properties </button>
+    <div class="accordion-content">
+        <p>Position properties is used to unlock the layer of HTML element. <br><br>
+        • position → relative, absolute, fixed; <br>
+        • top → 10px; <br>
+        • bottom → 10px; <br>
+        • left → 10px; <br>
+        • right → 10px; <br>
+        • Z-index → 1, -1 <br> where, 1 is forward and -1 is backward.
+        </p>
+    </div>
+</div>
+
+<div class="accordion-item">
+    <button class="accordion-header"><b></b> Introduction to CSS3</button>
+    <div class="accordion-content">
+        <p>CSS3 is the latest evolution of the cascading style sheets language and aims at extending CSS2. It brings a lot-awaited novelties like rounted corners, shadow, gradients transition or animations, as well as new layout like multi-columns, flexible box or grid layouts.</p>
+    </div>
+</div>
+
+<div class="accordion-item">
+    <button class="accordion-header"><b></b>CSS3 is used to apply</button>
+    <div class="accordion-content">
+        <p>
+            → Dynamic effects <br>
+            → Transitions <br>
+            → Animation <br>
+            → Slick and flexible page <br>
+            → Gradient effects <br>
+        </p>
+    </div>
+</div>
+
+<div class="accordion-item">
+    <button class="accordion-header"><b></b>Difference between CSS2 and CSS3</button>
+    <div class="accordion-content">
+        <p>
+            → CSS2 creates only staladon graphics webpage while CSS3 creates staladon and motion graphics webpages. <br><br>
+            → CSS2 makes our webpage user friendly while CSS3 makes our webpage user and device friendly both. <br><br>
+            → CSS2 properties are long while CSS3 properties are sort. <br><br>
+            → CSS2 use some software for graphics editing while CSS3 can edit any graphic without any software. <br><br>
+            → CSS2 properties are browser friendly while CSS3 properties are not browser friendly. 
+        </p>
+    </div>
+</div>
+
+
+<div class="accordion-item">
+    <button class="accordion-header"><b></b> What is responsive webpage design?</button>
+    <div class="accordion-content">
+        <p>
+            Responsive web-design makes your web-design page look good an all devices. <br> Responsive web-design use only HTML and CSS. <br> Responsive web-design is not a program.
+        </p>
+    </div>
+</div>
+
+<div class="accordion-item">
+    <button class="accordion-header"><b></b>@media syntax</button>
+    <div class="accordion-content">
+        <p>
+            @media only screen and (max-width:600px) <br>
+            { <br>
+                &nbsp;&nbsp;selector{properties: value;} <br>
+            }
+        </p>
+    </div>
+</div>
+
+<div class="accordion-item">
+    <button class="accordion-header"><b></b>Pseduo element for scrollbar</button>
+    <div class="accordion-content">
+        <p>
+            ::scrollbar <br>
+            ::scrollbar-track <br>
+            ::scrollbar-thumb <br><br>
+            <b>Syntax</b> <br>
+            ::-webkit-scrollbar{property:value;}
+        </p>
+    </div>
+</div>
+
+<div class="accordion-item">
+    <button class="accordion-header"><b></b>Animation</button>
+    <div class="accordion-content">
+        <p>
+            Motion graphics are called animation.  <br><br>
+            Example <br>
+            Animation-name: anyname <br>
+            Animation-duration: 10s (10 second) <br>
+            Animation-delay: 30s, infinite <br> <br>
+            <b>Syntax</b> <br>
+            @keyframes animationName <br>
+            { <br>
+             &nbsp;&nbsp; 0%{property:value;} <br>
+             &nbsp;&nbsp; 100%{property:value;} <br>
+            }
+        </p>
+    </div>
+</div>
+
+<div class="accordion-item">
+    <button class="accordion-header"><b></b>Animation browser</button>
+    <div class="accordion-content">
+        <p>
+            <b>-webkit-</b> &nbsp;&nbsp;:&nbsp;&nbsp; for chorome and safari versions <br>
+            <b>-o-</b> &nbsp;&nbsp;&nbsp;:&nbsp; for overa version <br>
+            <b>-moz-</b> &nbsp;&nbsp;:&nbsp;&nbsp; for mozila firefox <br>
+        </p>
+    </div>
+</div>
+
+<div class="accordion-item">
+    <button class="accordion-header"><b></b>How do you create a CSS animation?</button>
+    <div class="accordion-content">
+        <p>You create a CSS animation by defining keyframes with the @keyframes rule and then applying the animation to an element using the animation property.</p>
+    </div>
+</div>
+<div class="accordion-item">
+    <button class="accordion-header"><b></b>What is the @keyframes rule?</button>
+    <div class="accordion-content">
+        <p>The @keyframes rule specifies the animation code. It defines the styles fot the element at various points during the animation sequecne.
+            
+        </p>
+    </div>
+</div>
+<div class="accordion-item">
+    <button class="accordion-header"><b></b>How do you change the color of the text ?</button>
+    <div class="accordion-content">
+        <p>
+            You can set the background color of an element using the 'background-color' properties. <br><br>
+            <div   Id="ans_box">
+                selector { <br>
+                    &nbsp;&nbsp;background-color: #ff0000; <br>
+                }
+            </div>
+        </p>
+    </div>
+</div>
+<div class="accordion-item">
+    <button class="accordion-header"><b></b>How do you set a background-color image?</button>
+    <div class="accordion-content">
+        <p>
+            You can set a background-image using the 'background-image properties' .<br><br>
+            <div   Id="ans_box">
+                selector { <br>
+                    &nbsp;&nbsp;background-image: url{'image.jpg'}; <br>
+                }
+            </div>
+        </p>
+    </div>
+</div>
+
+<div class="accordion-item">
+    <button class="accordion-header"><b></b>What is the box-sizing properties?</button>
+    <div class="accordion-content">
+        <p>
+            The box-sizing properties defines how the total width and height an element are calculated. With box-sizing:border-box; the padding and border are included in the element's total width and height.<br><br>
+            <div   Id="ans_box">
+                selector { <br>
+                    &nbsp;&nbsp;box-sizing: border-box; <br>
+                }
+            </div>
+        </p>
+    </div>
+</div>
+
+
+<div class="accordion-item">
+    <button class="accordion-header"><b></b></button>
+    <div class="accordion-content">
+        <p></p>
+    </div>
+</div>
+
+<div class="accordion-item">
+<button class="accordion-header"><b></b>What is text decoration?</button>
+<div class="accordion-content">
+    <p>It is a mainly used for underlining, striking through or adding a new above below the text. </p>
+</div>
+</div>
+
+<div class="accordion-item">
+<button class="accordion-header"><b></b>What is font-weight?</button>
+<div class="accordion-content">
+    <p>Font-weight is the "value" placed on your font that will determine how bold or light your text will appear. <br>
+        Ex→ font-weight: normal/bold/bolder/lighter <br>
+        font-weight : 100 / 200/ 300/.......900
+    </p>
+</div>
+</div>
+
+<div class="accordion-item">
+<button class="accordion-header"><b></b>What is font-family?</button>
+<div class="accordion-content">
+    <p> The font-family property specifies the font for an element the font-family property can hold several font names as a "Fallback" system <br>
+        Example: - arial, roboto, sans-serif etc.
+    </p>
+</div>
+</div>
+
+<div class="accordion-item">
+<button class="accordion-header"><b></b>Types of Color System in CSS</button>
+<div class="accordion-content">
+    <p>  <b>There are four types of color system in css</b> <br>
+    
+            1. RGB → (Red,Green,Blue)  <br>
+            2. HEX → (Hexadecimal) <br>  
+            3. HSL → (Hue Saturation and Lightness) <br>
+            4. RGBA → (Red, Green,Blue, Alpha chanel) <br>
+        
+    </p>
+</div>
+</div>
+
+
+<div class="accordion-item">
+<button class="accordion-header"><b></b>What is box model in CSS?</button>
+<div class="accordion-content">
+    <p>The css box model refers to how HTML elements are modeled in browser engines and how the dimenstion of these HTML elements are derived from css properties.</p>
+</div>
+</div>
+
+<div class="accordion-item">
+<button class="accordion-header"><b></b>What is border?</button>
+<div class="accordion-content">
+    <p>The css border properties allow you to specify the style, width, and color of an element's border.
+        Ex- Sol  Id. dotted etc. <br>
+        <div   Id="ans_box">
+            element { <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;  border: 5px solid red; <br>
+            }
+        </div>
+    </p>
+</div>
+</div>
+
+<div class="accordion-item">
+<button class="accordion-header"><b></b>What is padding ?</button>
+<div class="accordion-content">
+    <p> Padding is the space between an elements border and elemets content put another way.</p>
+</div>
+</div>
+
+<div class="accordion-item">
+<button class="accordion-header"><b></b>What is margin?</button>
+<div class="accordion-content">
+    <p> A margin is the space around an element's border.</p>
+</div>
+</div>
+
+<div class="accordion-item">
+<button class="accordion-header"><b></b>What is position property?</button>
+<div class="accordion-content">
+    <p>→ The position property in CSS determine how an element is positioned in a document.<br> <br>
+    
+        → <b> Types of positoned. </b><br>
+        
+         
+        ○ Static positoned <br>
+        ○ Relative positioned <br>
+        ○ Absoulute positioned <br>
+        ○ Fixed positioned <br>
+        ○ Sticky positioned <br>
+    
+    </p>
+    </div>
+</div>
+</div>
+
+<div class="accordion-item">
+    <button class="accordion-header"><b></b>Static</button>
+    <div class="accordion-content">
+        <p> 
+            ○ Default position <br>
+            ○ Element are positioned according to the normal flow of the document. <br>
+            ○ We can't use offsets like top, right, bottom, and left.
+        </p>
+    </div>
+</div>
+
+<div class="accordion-item">
+    <button class="accordion-header"><b></b>Relative</button>
+    <div class="accordion-content">
+        <p> 
+           ○ Positioned relative to its normal position. <br>
+           ○ We can use ofsets like top, right, bottom, left.
+        </p>
+    </div>
+</div>
+
+<div class="accordion-item">
+    <button class="accordion-header"><b></b>Absolute</button>
+    <div class="accordion-content">
+        <p> 
+            ○ Position relative to the nearest positioned ancestor. <br>
+            ○ It does not work with position static <br>
+        </p>
+    </div>
+</div>
+
+<div class="accordion-item">
+    <button class="accordion-header"><b></b>Fixed</button>
+    <div class="accordion-content">
+        <p> 
+           Positioned relative to the viewport, meaning it stays in the same place even when the page is scrolled. 
+        </p>
+    </div>
+</div>
+
+<div class="accordion-item">
+    <button class="accordion-header"><b></b>Sticky</button>
+    <div class="accordion-content">
+        <p> 
+            ○Acts like relative until the element reaches a specified scroll point, then it sticks in place.
+        </p>
+    </div>
+</div>
+
+<div class="accordion-item">
+<button class="accordion-header"><b></b>What is Z-index?</button>
+<div class="accordion-content">
+    <p>It decide the stack level of elements overlapping elements with a large Z-index cover those with a smaller one. <br> <br>
+     Ex- <br>
+     Z-index : auto(0) <br>
+     Z-index : 1/2/3.... <br>
+     Z-index : -1/-2/-3... <br>
+ </p>
+</div>
+</div>
+
+<div class="accordion-item">
+<button class="accordion-header"><b></b>What is background image?</button>
+<div class="accordion-content">
+    <p>The background-image property is used to set an image as the background of an element <br> <br>
+    Syntax: <br>
+        background-image: URL (name of image);
+</p>
+</div>
+</div>
+
+<div class="accordion-item">
+<button class="accordion-header"><b></b>What is flex-box ?</button>
+<div class="accordion-content">
+    <p>It is one dimenstional layout method for arranging items in rows or columns.</p>
+</div>
+</div>
+
+<div class="accordion-item">
+<button class="accordion-header"><b></b>What is flex-box direction?</button>
+<div class="accordion-content">
+    <p> It set how flex items are placed in the flex container along which axis and direction.</p>
+</div>
+</div>
+
+<div class="accordion-item">
+<button class="accordion-header"><b></b>Types of flex-direction</button>
+<div class="accordion-content">
+    <p><ul>
+    • flex-dircetion : row <br>
+    • flex-dircetion : coloumn <br>
+    • flex-dircetion : row-reverse <br>
+    • flex-dircetion : column-reverse <br>
+    </ul></p>
+</div>
+</div>
+
+<div class="accordion-item">
+<button class="accordion-header"><b></b>What is flex properties?</button>
+<div class="accordion-content">
+    <p>There are some types of flex properties <br>
+    <ul>
+    • Justify-content:Alignment along the main axis <br>
+        flex-start/ flex-end/ flex-center/ space-evenly/ space-between/ space-around. <br>
+    • Flex-Wrap:
+        nowrap/wrap/wrap-reverse <br>
+    • align-items:
+        alignment along the cross axis <br>
+    • align-content:
+        alignment of space between and around the content along cross-axis.
+    </ul> </p>
+</div>
+</div>
+
+<div class="accordion-item">
+<button class="accordion-header"><b></b>What is media Queries?</button>
+<div class="accordion-content">
+    <p>Media queries are a feature in css that allows you to apply style to an element based on the characteristics of the device or screen displaying the content. </p>
+</div>
+</div>
+
+<div class="accordion-item">
+<button class="accordion-header"><b></b>Syntax of media Queries</button>
+<div class="accordion-content">
+    <p>
+    <pre> @media (width:60px){
+        div{
+            background-color: yellow;
+        }
+    }
+    </pre>
+    </p>
+</div>
+</div>
+
+<div class="accordion-item">
+<button class="accordion-header"><b></b>What is transition?</button>
+<div class="accordion-content">
+    <p>Transition enable you to define the transition between two states of an element. </p>
+</div>
+</div>
+
+<div class="accordion-item">
+<button class="accordion-header"><b></b>Transition property</button>
+<div class="accordion-content">
+    <p>
+    ○ Transition-name  <br>
+    ○ Transition-duration <br>
+    ○ Transition-timing-function() <br>
+    ○ Transition-delay <br>
+     </p>
+</div>
+</div>
+
+<div class="accordion-item">
+<button class="accordion-header"><b></b>What is css Transform?</button>
+<div class="accordion-content">
+    <p>Used to apply 2D & 3D transformations to an element <br>
+        Types of transform: <br>
+    
+        → rotate  <br>
+        → scale <br>
+        → translate <br>
+        → skew <br>
+        
+    </p>
+</div>
+</div>
+
+<div class="accordion-item">
+    <button class="accordion-header"><b></b>How do you rotate an element using CSS?</button>
+    <div class="accordion-content">
+        <p>→You can rotate an element using <b>rotate()</b> function. <br>
+            → This rotates the element 45 degrees clockwise. <br> <b>Syntax</b> <br>
+            <div id="ans_box">
+                .rotate-example { <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; transform: rotate(45deg); <br>
+                }
+            </div>
+        </p>
+    </div>
+</div>
+<div class="accordion-item">
+    <button class="accordion-header"><b></b>How do you scale an element using CSS?</button>
+    <div class="accordion-content">
+        <p>→ You can scale an element using the <b>scale() function.</b> <br>
+            <div id="ans_box">
+                .scale-example { <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; transform: scale(2); <br>
+                }
+            </div>
+        </p>
+    </div>
+</div>
+<div class="accordion-item">
+    <button class="accordion-header"><b></b>How do you translate an element using CSS?</button>
+    <div class="accordion-content">
+        <p>→ You can skew an element using the <b>translate() function.</b> <br>
+            → This moves the element 50 pixels to the right and 100 pixels down. <br>
+            <div id="ans_box">
+                .transalte-example { <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; transform: translate(50px, 100px); <br>
+                }
+            </div>
+        </p>
+    </div>
+</div>
+
+<div class="accordion-item">
+    <button class="accordion-header"><b></b>How do you skew an element using CSS?</button>
+    <div class="accordion-content">
+        <p>→ You can skew an element using the <b>skew() function.</b> <br>
+            → This skews the element <b>20 degrees </b>along the Y-axis and <b>10 degrees </b>along the Y-axis. <br>
+            <div id="ans_box">
+                .skew-example { <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp; transform: skew(20deg, 10deg); <br>
+                }
+            </div>
+        </p>
+    </div>
+</div>
+
+
+
+<div class="accordion-item">
+    <button class="accordion-header"><b></b></button>
+    <div class="accordion-content">
+        <p></p>
+    </div>
+</div>
+
+
+<div class="accordion-item">
+<button class="accordion-header"><b></b>What is animation?</button>
+<div class="accordion-content">
+    <p>Animation make it possible to animate transitions from one css style congigration to another animations consist of two components. A style describe the css animation and a set of keyframes that indicate the start and end states of the animation's style. </p>
+</div>
+</div>
+
+<div class="accordion-item">
+<button class="accordion-header"><b></b>Animation properties</button>
+<div class="accordion-content">
+    <p>
+       • Animation-name   <br>
+       • Animation-duration  <br>
+       • Animation-timing function<br>
+       • Animation-delay <br>
+       • Animation-iteration-count<br> 
+       • Animation-direction <br><br>
+       
+
+    </p>
+</div>
+</div>
+<div class="accordion-item">
+    <button class="accordion-header"><b></b>How to implement animation?</button>
+    <div class="accordion-content">
+        <p>
+            <div   Id="ans_box">
+                body { <br>
+                    &nbsp;&nbsp; animation: name 5s infinite; <br>
+                } <br><br>
+                @keyframes name { <br>
+                    &nbsp;&nbsp; 0%{background-color:red;} <br>
+                    &nbsp;&nbsp; 50%{background-color:yellow;} <br>
+                    &nbsp;&nbsp; 100%{background-color:purple;} <br>
+
+                }
+            </div>
+        </p>
+    </div>
+</div>
+
+
+<div class="accordion-item">
+<button class="accordion-header"><b></b>Syntax of create animation</button>
+<div class="accordion-content">
+    <p> 
+        <pre>
+            @keyframes animation name{
+                frome{
+                    --------------
+                }
+
+                to{
+                        --------------
+                }
+            }
+        </pre>
+    </p>
+</div>
+</div>
+
+<div class="accordion-item">
+<button class="accordion-header"><b></b>What is box shadow?</button>
+<div class="accordion-content">
+    <p>It adds shadow effects around an element's frame <br><br>
+    Example  <br>
+        <div id="ans_box">
+            #Idname{ <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; box-shadow: 2px 2px 10px green;
+            }
+        </div>
+</p>
+</div>
+</div>
+
+<div class="accordion-item">
+<button class="accordion-header"><b></b>What is pseudo class?</button>
+<div class="accordion-content">
+    <p>→ A keyword added to a selector that specifies a special state of the selected elements <br>
+        A pseudo class is a way to style an element in CSS based on its state or position without needing extra HTML code.
+    Ex- <br>
+    :hover <br>
+    :active <br>
+    :checked <br>
+    :nth-of-type()
+</p>
+</div>
+</div>
+
+<div class="accordion-item">
+<button class="accordion-header"><b></b>What is pseudo elements?</button>
+<div class="accordion-content">
+    <p> → A keyword added to a selector that lets you style a specifc part of the selected element. <br>
+        → Pseudo element are written with a double colon (::) <br>
+        →Pseudo element targets the specific part of an element. <br>
+    Ex- <br>
+    :: first-letter <br>
+    :: first-lene <br>
+    :: selection <br>
+    <div   Id="ans_box">
+        p::before{ <br>
+         &nbsp;&nbsp; content: "Note: "; <br>
+         &nbsp;&nbsp; font-weight: bold; <br>
+        } <br> <br>
+        p::after{ <br>
+            &nbsp;&nbsp; content: " (end)"; <br>
+            &nbsp;&nbsp; font-style: italic; <br>
+           } <br> <br>
+    </div>
+    </p>
+</div>
+</div>
+
+<div class="accordion-item">
+<button class="accordion-header"><b></b>What is cascading in CSS?</button>
+<div class="accordion-content">
+    <p> The css cascade algorithem's job is to select css decelaration in order to determine the correct values for css properties.</p>
+</div>
+</div>
+
+
+
+    <div class="accordion-item">
+        <button class="accordion-header"><b></b>What is Grid?</button>
+        <div class="accordion-content">
+            <p>Setting a container's display to grid will make all children grid items.</p>
+        </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-header"><b></b>What is Grid template?</button>
+            <div class="accordion-content">
+                <p>They define the lines & track sizing. <br> <br>
+                For Example ↓ <br> <br>
+                grid-template: row; <br>
+                grid-template: column; </p>
+            </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header"><b></b>What is grid-template (repeat)?</button>
+                <div class="accordion-content">
+                    <p>Repeat is used to device all available space. <br><br>
+                    Syntax <br><br> grid-template-row: repeat(count, 1ft);</p>
+                </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header"><b></b>What is Grid gaps?</button>
+                    <div class="accordion-content">
+                        <p>They define the gaps between the lines <br> <br>
+                        Example <br><br>
+                        row-gap: 10px; <br> column-gap: 20px;</p>
+                    </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header"><b></b>Grid Common properties</button>
+                        <div class="accordion-content">
+                            <p>
+                            
+                                ○ Justify-items→ (for container)  <br>
+                                ○ Justify-self→(for items) <br>
+                                ○ Align-items <br>
+                                ○ Align-self <br>
+                                ○ Place items <br>
+                                ○ Place self <br>
+                                
+                            </p>
+                        </div>
+                        </div>
+
+                        
+
+
+
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

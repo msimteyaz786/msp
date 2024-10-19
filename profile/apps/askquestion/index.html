@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" oncontextmenu="window.alert('Not allowed');return false;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>subjective</title>
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="shortcut icon" href="your website logo" type="image/x-icon">              
+
+
+
+</head>
+<body>
+    <div id="profile_box">
+        <!-- <div id="tri"></div> -->
+        <div id="profile_pic"></div>
+
+    </div>
+
+    <div id="main_all_contact_box">
+
+        <div id="contact_header">
+            <h1><i class="fa-solid fa-circle-question" id="book_icon"></i> Ask  Doubt</h1>
+            <!-- <input type="search" placeholder="Search Your Notes Here..." id="search"> -->
+        </div>
+
+        <div id="all_contact_box">
+            
+           
+
+            <div id="contact">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="1b30d1ed-6195-4352-8905-24b57088f55c">
+                    <input type="hidden" name="subject" value="Hi Imteyaz New feedback for your Application">
+                    <!-- <p>Name:</p> -->
+                    <input type="name" name="name" id="search" placeholder="Your Name" required="required"><br><br><br>
+                    <!-- <p>Email Id:</p> -->
+                    <input type="email" name="email" id="search" placeholder="Email" required="required"><br><br><br>
+                    <!-- <p>Mobile Number:</p> -->
+                    <input type="tel" name="mobile" id="search" placeholder="Mobile Number"> <br><br><br>
+                    <!-- <p>Subject Name:</p> -->
+                    <input type="text" name="subject" id="search" placeholder="Subject or Software" required="required"> <br><br><br>
+                    <!-- <p>Question Number:</p> -->
+                    <input type="number" name="name" id="search" placeholder="Enter Question Number" required="required"><br><br><br>
+                    <!-- <p>Question Name:</p> -->
+                    <input type="name" name="name" id="search" placeholder="Write Question">
+                    <button type="submit" id="send_btn">Send Messge</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- <style>
+        *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    form{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        padding: 40px 60px;
+        background-color: skyblue;
+    }
+    
+    .form-content{
+        background-color: white;
+        text-align: center;
+        box-shadow: 0px 0px 3px black;
+        border-radius: 10px;
+        padding: 10px 40px;
+    }
+    legend{
+        margin-top: 20px;
+        font-size: 30px;
+    }
+    ::placeholder{
+        font-size: 20px;
+    }
+    .name, .email, .msg{
+        margin-top: 10px;
+    }
+    .name{
+        margin-top: 20px;
+    }
+    .name input{
+        width: 100%;
+        height: 50px;
+        border: none;
+        border-bottom: 1px solid black;
+        outline: none;
+        background: transparent;
+        font-size: 20px;
+    }
+    .email{
+        margin-top: 20px;
+    }
+    .email input{
+        width: 100%;
+        height: 50px;
+        border: none;
+        border-bottom: 1px solid black;
+        outline: none;
+        background: transparent;
+        font-size: 20px;
+    }
+    .msg{
+        margin-top: 20px;
+    }
+    .msg input{
+        width: 100%;
+        height: 50px;
+        border: none;
+        border-bottom: 1px solid black;
+        outline: none;
+        background: transparent;
+        font-size: 20px;
+    }
+    
+    button{
+        border: none;
+        outline: none;
+        font-size: 20px;
+        background-color: transparent;
+        cursor: pointer;
+        padding: 10px 20px;
+        border: 1px solid black;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    
+    }
+    button:hover{
+        background-color: black;
+        color: white;
+    }
+    @media (max-width: 768px) {
+        .form-content{
+            width: 100%;
+        }
+        .form-content .name, .email, .msg{
+            min-width: 100%;
+        }
+    }
+    @media (max-width: 425px) {
+        form{
+            padding: 10px 0px;
+        }
+    }
+
+</style>
+<link rel="shortcut icon" href="your website logo" type="image/x-icon">              
+</head>
+<body>                         -->
+<!-- <form action="https://api.web3forms.com/submit" method="POST">
+    <div id="contact_header">
+        <h1><i class="fa-solid fa-circle-question" id="book_icon"></i> Ask  Doubt</h1>
+    </div>
+
+<div class="form-content">
+<Legend>Contact Us</Legend>
+
+
+<input type="hidden" name="access_key" value="1b30d1ed-6195-4352-8905-24b57088f55c">
+
+<input type="hidden" name="redirect" value="contact-thankyou-page">
+
+<input type="hidden" name="subject" value="Hey Sahil New feedback for your website">
+
+<div class="name">
+<input type="text" name="name" placeholder="Your Name" required>
+</div>
+
+<div class="email">
+<input type="email" name="email" placeholder="your email" required >
+</div>
+
+<div class="msg">
+<input type="text" name="Message" placeholder="Your Messgae">
+</div>
+
+<button type="submit">Submit</button>
+</div>
+</form>    -->
+
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
