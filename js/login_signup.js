@@ -23,8 +23,24 @@ signup_frm.onsubmit = function()
             },3000);
             return false;
         }
+        
 
 }
+function show_password(){
+    var chk = document.getElementById("check");
+    var inpt = document.getElementById("login_password");
+    var text_pass = document.getElementById("s_pass");
+    if(chk.checked){
+        inpt.type="text";
+        text_pass.innerHTML = "Hide Password";
+        
+    }
+    else{
+        inpt.type="password"
+        text_pass.innerHTML = "Show Password";
+    }
+}
+show_password();
 // end signup coding.
 
 
@@ -122,10 +138,14 @@ return false;
 function show_password(){
     var chk = document.getElementById("check");
     var inpt = document.getElementById("login_password");
+    var text_pass = document.getElementById("s_pass");
     if(chk.checked){
         inpt.type="text";
+        text_pass.innerHTML = "Hide Password";
+        
     }
     else{
         inpt.type="password"
+        text_pass.innerHTML = "Show Password";
     }
 }

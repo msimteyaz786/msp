@@ -38,7 +38,7 @@ const quizArray = [
   },
   {
     id: "3",
-    question: "Which submenu us used for voucher entry in Tally?",
+    question: "Which submenu is used for voucher entry in Tally?",
     options: ["Accounting Voucher", "Vouchers", "Account Info", "None of these"],
     correct: "Accounting Voucher",
   },
@@ -56,7 +56,7 @@ const quizArray = [
   },
   {
     id: "6",
-    question: "Pressing _______button in the Gateway of Tally opens company info in Tally",
+    question: "Pressing _______ button in the Gateway of Tally opens company info in Tally.",
     options: ["Alt+F3", "F11", "F5", "F6"],
     correct: "Alt+F3",
   },
@@ -68,20 +68,20 @@ const quizArray = [
   },
   {
     id: "8",
-    question: "Payroll, budgeting and scenario management may be enabled through ______menu in tally",
+    question: "Payroll, budgeting and scenario management may be enabled through ______menu in tally.",
     options: ["Accounting Features", " Inventory Features", "Statutory and Taxation", "none of them"],
     correct: "Accounting Features",
   },
   {
     id: "9",
-    question: "Account Groups, Ledgers, Budget and scenario are available under ______ in Tally",
+    question: "Account Groups, Ledgers, Budget and scenario are available under ______ in Tally.",
     options: [" Payroll Info", "nventory Info", "Accounts Info", "none of them"],
     correct: "Accounts Info",
   },
   {
     id: "10",
-    question: "Employee groups, employee, attendance/production types, pay heads,salary details, voucher types, etc. are available under in Tally",
-    options: ["Payroll Info", "Inventory Info", "Accounts Info", "none of them"],
+    question: "Employee groups, employee, attendance/production types, pay heads, salary details, voucher types, etc. are available under in Tally:",
+    options: ["Payroll Info", "Inventory Info", "Accounts Info", "None of them"],
     correct: "Payroll Info",
   },
   {
@@ -104,13 +104,13 @@ const quizArray = [
   },
   {
     id: "14",
-    question: "______ is the shortcut to configure a company in Tally",
+    question: "______ is the shortcut to configure a company in Tally.",
     options: ["F12", "F11", "F10", "F9"],
     correct: "F12",
   },
   {
     id: "15",
-    question: " ______ is the shortcut to change the accounting period from Gateway of Tally.",
+    question: "What is the shortcut to change the accounting period from Gateway of Tally?",
     options: ["F1", "Alt+F1", "Alt+F2", "Alt+F3"],
     correct: "Alt+F2",
   },
@@ -122,7 +122,7 @@ const quizArray = [
   },
   {
     id: "17",
-    question: " ______ is the shortcut to purchase voucher from Accounting Vouchers in Tally",
+    question: " ______ is the shortcut to purchase voucher from Accounting Vouchers in Tally.",
     options: ["Alt+F1", "Ctrl+F1", "F8", "F9"],
     correct: "F9",
   },
@@ -138,8 +138,8 @@ const quizArray = [
     correct: "Ctrl+F9",
   }, {
     id: "20",
-    question: "______ is the shortcut to reversing journal from Accounting Vouchers in Tally",
-    options: ["F10", "Ctrl+F10", "Alt+I", "Alt+V"],
+    question: "______ is the shortcut to reversing journal from Accounting Vouchers in Tally.",
+    options: ["F10", "Ctrl + F10", "Alt + I", "Alt + V"],
     correct: "F10",
   }, {
     id: "21",
@@ -148,14 +148,14 @@ const quizArray = [
     correct: "Ctrl+F10",
   }, {
     id: "22",
-    question: ". _____ is the shortcut to Accounting Invoice from Accounting Vouchers in Tally.",
-    options: ["Alt +V", "Alt +I", "F10", "Ctrl+F10"],
-    correct: "Alt +I",
+    question: "_____ is the shortcut to Accounting Invoice from Accounting Vouchers in Tally.",
+    options: ["Alt + V", "Alt + I", "F10", "Ctrl + F10"],
+    correct: "Alt + I",
   }, {
     id: "23",
     question: " ______ is the shortcut to voucher as invoice from Accounting Vouchers in Tally.",
-    options: ["F10", "Ctrl+F10", "Alt +I", "Ctrl +V"],
-    correct: "Ctrl +V",
+    options: ["F10", "Ctrl+F10", "Alt + I", "Ctrl + V"],
+    correct: "Ctrl + V",
   }, {
     id: "24",
     question: "_____ is the shortcut to postdated voucher from Accounting Vouchers in Tally.",
@@ -168,7 +168,7 @@ const quizArray = [
     correct: "Ctrl+ L",
   }, {
     id: "26",
-    question: "How many primary groups are there are in Tally",
+    question: "How many primary groups are there are in Tally?",
     options: ["19", "28", "15", "20"],
     correct: "15",
   }, {
@@ -188,14 +188,14 @@ const quizArray = [
     correct: "Alt+ C",
   }, {
     id: "30",
-    question: "How many secondary groups are there are in Tally",
+    question: "How many secondary groups are there are in Tally?",
     options: ["19", "28", "13", "20"],
     correct: "13"
   }, {
     id: "31",
     question: "A number ranging from 0 to 1 (or as apercentage) to measure the performance of company against its potential is called_______.",
-    options: ["scenarios", "budgets", "ratio analysis", "voucher"],
-    correct: "ratio analysis",
+    options: ["Scenarios", "Budgets", "Ratio analysis", "Vucher"],
+    correct: "Ratio analysis",
   }, {
     id: "32",
     question: "Which Voucher Type is used to transfer amount from one bank to another bank?",
@@ -208,7 +208,7 @@ const quizArray = [
     correct: "Alt+F4",
   }, {
     id: "34",
-    question: "_____is the shortcut for sales order in Tally",
+    question: "_____is the shortcut for sales order in Tally.",
     options: ["F8", "F9", "Alt+F4", "Alt+F5"],
     correct: "Alt+F5",
   }, {
@@ -228,17 +228,17 @@ const quizArray = [
     correct: "Sales",
   }, {
     id: "38",
-    question: "In taxation, FBT stands for____",
+    question: "In taxation, FBT stands for____.",
     options: ["Fringe Benefit Tax", "Frame Benefit Tax", "Fast Benefit Tax", "Fringe Benefit Tariff"],
     correct: "Fringe Benefit Tax",
   }, {
     id: "39",
-    question: "The tax collected by the employer towards income of an employee is called____",
+    question: "The tax collected by the employer towards income of an employee is called____.",
     options: ["Tax Collected at Source", "Tax Deducted at Source (TDS)", "Fringe Benefit Tax (FBT)", "Value Added Tax (VAT)"],
     correct: "Tax Deducted at Source (TDS)",
   }, {
     id: "40",
-    question: "The tax on the value added to an item is called ____",
+    question: "The tax on the value added to an item is called ______ .",
     options: ["Tax Collected at Source", "Tax Deducted at Source (TDS)", "Fringe Benefit Tax (FBT)", "Value Added Tax (VAT)"],
     correct: "Value Added Tax (VAT)",
   },
@@ -262,7 +262,7 @@ const quizArray = [
   },
   {
     id: "45",
-    question: "Rs. 10,000 withdraw from State Bank. In which vucher types this transaction will be recorded?",
+    question: "Rs. 10,000 withdraw from State Bank. In which voucher types this transaction will be recorded?",
     options: ["Paymeny", "Receipt", "Contra", "Purchase"],
     correct: "Contra",
   },
@@ -286,7 +286,7 @@ const quizArray = [
   },
   {
     id: "49",
-    question: "What is termed as excess of credit side total amount over debit side total amount in profit and loss account?",
+    question: "What is termed as eccess of credit side total amount over debit side total amount in profit and loss account?",
     options: ["Profit", "Loss", "Debit", "Credit"],
     correct: "Profit",
   },
@@ -323,7 +323,7 @@ const quizArray = [
   },
   {
     id: "55",
-    question: "Where we record purchase return, sales return, depreciation, nad debts etc. in tally?",
+    question: "Where we record purchase return, sales return, depreciation, and debts etc. in tally?",
     options: ["Journal", "Payment", "Contra", "Receipt"],
     correct: "Journal",
   },
@@ -346,17 +346,17 @@ const quizArray = [
     correct: "F2",
   },{
     id: "59",
-    question: "Tally supports_______________system of accounting.",
+    question: "Tally supports _______________ system of accounting.",
     options: ["single entry", "double entry", "no entry", "null entry"],
     correct: "double entry",
   },{
     id: "60",
-    question: "Tally can maintain_______________for stock keeping, so that fresh inventory may arrive before the old stock is exhausted.",
+    question: "Tally can maintain _______________ for stock keeping, so that fresh inventory may arrive before the old stock is exhausted.",
     options: ["Reorder Level", "Profit", "Loss", "Cash"],
     correct: "Reorder Level",
   },{
     id: "61",
-    question: "Balence sheet is produced___________when accounts are maintained in Tally.",
+    question: "Balance sheet is produced ___________ when accounts are maintained in Tally.",
     options: ["Manually", "Automatically", "Remotely", "Randomly"],
     correct: "Automatically",
   },{
@@ -376,12 +376,12 @@ const quizArray = [
     correct: "Tally Solutions",
   },{
     id: "65",
-    question: "In tasation, VAT stands for_______________",
+    question: "In taxation, VAT stands for____________.",
     options: ["value Assigned Tax", "Value Approved Tax", "Value Added Transaction", "value Added Tax"],
     correct: "value Added Tax",
   },{
     id: "66",
-    question: "In tasation, TCS stands for_______________",
+    question: "In taxation, TCS stands for_____________.",
     options: ["Tax Creation at Source", "Tax Collected at Source", "Tax Combined at Source", "Traiff Collected at Station"],
     correct: "Tax Collected at Source",
   },{
@@ -391,17 +391,17 @@ const quizArray = [
     correct: "Company Info",
   },{
     id: "68",
-    question: "POS stands for_______________in Tally",
-    options: ["Purchase of Sale", "Point of Safety", "Purpose of Sale", "Point of sale"],
-    correct: "Point of sale",
+    question: "POS stands for_______________ in Tally.",
+    options: ["Purchase Of Sale", "Point Of Safety", "Purpose Of Sale", "Point Of Sale"],
+    correct: "Point Of Sale",
   },{
     id: "69",
-    question: "________is the shortcut to shut a company in Tally",
+    question: "________is the shortcut to shut a company in Tally.",
     options: ["F1", "Alt + F1", "Alt + F2", "F2"],
     correct: "Alt + F1",
   },{
     id: "70",
-    question: "________is the shortcut to company info from Gatewat of Tally.",
+    question: "________is the shortcut to company info from Gateway of Tally.",
     options: ["F1", "Alt + F1", "Alt + F3", "F2"],
     correct: "Alt + F3",
   },{
@@ -411,9 +411,9 @@ const quizArray = [
     correct: "Many Indian/Assian",
   },{
     id: "72",
-    question: "Tally can maintain_________accounts.",
-    options: ["tax accounts", "liabilities account", "both", "none of these"],
-    correct: "both",
+    question: "Tally can maintain _______ accounts.",
+    options: ["tax accounts", "liabilities account", "Both", "None of these"],
+    correct: "Both",
   },{
     id: "73",
     question: "Tally can provide___________to each company.",
@@ -431,18 +431,18 @@ const quizArray = [
     correct: "accounting",
   },{
     id: "76",
-    question: "Financial Year period is____________.",
+    question: "Financial Year period is ____________.",
     options: ["1 April to 31 March", "1 January to 31 December", "1 June to 31 July", "None of these"],
     correct: "1 April to 31 March",
   },{
     id: "77",
     question: "Account Groups, Ledger, Budget and scenario are available under_________in Tally.",
-    options: ["payroll info", "accounts info", "inventory info", "none of these"],
-    correct: "accounts info",
+    options: ["Payroll info", "Accounts info", "Inventory info", "None of these"],
+    correct: "Accounts info",
   },{
     id: "78",
     question: "Tally package is developed by___________.",
-    options: ["Tally solutions", "Tally corporation", "Tally company", "Tata company."],
+    options: ["Tally solutions", "Tally corporation", "Tally company", "Tata company"],
     correct: "Tally solutions",
   },{
     id: "79",
@@ -451,17 +451,17 @@ const quizArray = [
     correct: "Create Company",
   },{
     id: "80",
-    question: "Where do we record transactions of Salary, rent or interest paid",
+    question: "Where do we record transactions of Salary, rent or interest paid?",
     options: ["Contra", "Journal", "Receipt", "Payment"],
     correct: "Payment",
   },{
     id: "81",
-    question: "Tally data files are stored in",
+    question: "Tally data files are stored in ________.",
     options: ["Data directory", " Application Directory", "Configuration Directory", "None of these"],
     correct: "Data directory",
   },{
     id: "82",
-    question: "We can view the interest Calculation report from",
+    question: "We can view the interest Calculation report from:",
     options: ["None of these", "Statement of Accounts", "Accounts Book", "Accounts info."],
     correct: "Statement of Accounts",
   },{
@@ -493,7 +493,7 @@ const quizArray = [
     correct: "F12",
   },{
     id: "87",
-    question: "Bank OCC account is a group defined under",
+    question: "Bank OCC account is a group defined under________.",
     options: ["Bank Account", "Loan and Liability", "Secured loan", "Unsecured Loan"],
     correct: "Loan and Liability",
   },{
@@ -518,14 +518,14 @@ const quizArray = [
     correct: "Indirect Expenses",
   },{
     id: "92",
-    question: "The left hand side of tally screen shows",
-    options: ["Current date", "List of selected companies", "Gate way of tally", "Last entered vouche"],
+    question: "The left hand side of tally screen shows:",
+    options: ["Current date", "List of selected companies", "Gateway of tally", "Last entered vouche"],
     correct: "List of selected companies",
   },{
     id: "93",
     question: "ERP stands for ________.",
-    options: ["Enterprise resource planning ", "Economic resource planning", "Efficient resource planning ", "Economic resource planning"],
-    correct: "Enterprise resource planning ",
+    options: ["Enterprise Resource Planning", "Economic Resource Planning", "Efficient Resource Planning ", "Economic Resource Planning"],
+    correct: "Enterprise Resource Planning",
   },{
     id: "94",
     question: "The home screen of tally is also known as",
@@ -543,7 +543,7 @@ const quizArray = [
     correct: "Maximum Retail Price",
   },{
     id: "97",
-    question: "which option is used in Tally to close opened company?",
+    question: "Which option is used in Tally to close, an opened company?",
     options: ["Alter", "Shut Company", "Create Company", "Select Company"],
     correct: "Shut Company",
   },{

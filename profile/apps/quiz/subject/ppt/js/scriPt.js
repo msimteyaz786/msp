@@ -122,7 +122,7 @@ const quizArray = [
   },
   {
     id: "17",
-    question: "The default extension for a presentation prepared in powerpoint contained in MS Office 20. The default extension for a presentation prepared in powerpoint contained in MS Office version 2007 or later is ______.",
+    question: "The default extension for a presentation prepared in powerpoint contained in MS Office version 2007 or later is ______.",
     options: [".accdb", ".pptx", ".xlsx", ".docx"],
     correct: ".pptx",
   },
@@ -235,7 +235,7 @@ const quizArray = [
     correct: "9",
   },{
     id: "37",
-    question: "Every presentation contains_______",
+    question: "Every presentation contains _______.",
     options: ["Title Slide", "Speaker's Notes", "Audience Handouts", "All of these"],
     correct: "All of these",
   },
@@ -253,7 +253,7 @@ const quizArray = [
     correct: "Task pane",
   },{
     id: "40",
-    question: "A new presentation can be created from",
+    question: "A new presentation can be created from:",
     options: ["Blank Presentation", "From existing presentation", "From design template", "All of these"],
     correct: "All of these",
   },
@@ -271,7 +271,7 @@ const quizArray = [
   },
   {
     id: "43",
-    question: "In which menu can you find features like slide Design, Slide Layout etc.?",
+    question: "In which menu can you find features like Slide Design, Slide Layout etc.?",
     options: ["Insert Menu", "Formate Menu", "Tools Menu", "Slide Show Menu"],
     correct: "Formate Menu",
   },
@@ -284,8 +284,8 @@ const quizArray = [
   {
     id: "45",
     question: "Which of the following font effect is not available in PowerPoint Font dialog box?",
-    options: ["Underline", "Shadow", "emboss", "Strikethrough"],
-    correct: "Strikethrough",
+    options: ["Underline", "Shadow", "Emboss", "Strikethrough"],
+    correct: "Emboss",
   },
   {
     id: "46",
@@ -325,7 +325,7 @@ const quizArray = [
   },
   {
     id: "52",
-    question: "Want your logo in the same position on every slide, automatically insert it on the________",
+    question: "Want your logo in the same position on every slide, automatically insert it on the________.",
     options: ["Handout master", "Notes master", "Slide master", "All of these"],
     correct: "Slide master",
   },
@@ -356,8 +356,8 @@ const quizArray = [
   {
     id: "57",
     question: "Which of these PowerPoint features would allow any user to create a given simple presentation quicker?",
-    options: ["Animations", "Chart Wizard", "Transition Wizard", "AutoContent Wizard"],
-    correct: "AutoContent Wizard",
+    options: ["Animations", "Chart Wizard", "Transition Wizard", "Auto Content Wizard"],
+    correct: "Auto Content Wizard",
   },
   {
     id: "58",
@@ -367,7 +367,7 @@ const quizArray = [
   },
   {
     id: "59",
-    question: "What is the max Zoom percentage in MS PowerPoint?",
+    question: "What is the maximum Zoom percentage in MS PowerPoint?",
     options: ["400%", "300%", "200%", "100%"],
     correct: "400%",
   },
@@ -397,7 +397,7 @@ const quizArray = [
     correct: "Common tasks toolbar",
   }, {
     id: "65",
-    question: "How wer can find any and every command on the___",
+    question: "How were can find any and every command on the_____?",
     options: ["Menu bar", "Standard toolbar", "Formatting toolbar", "Drawing toolbar"],
     correct: "Menu bar",
   }, {
@@ -513,7 +513,7 @@ const quizArray = [
     correct: "View",
   },{
     id: "88",
-    question: "The shortcut to print powerpoint presentation is - ",
+    question: "What is the shortcut to print powerpoint presentation? ",
     options: ["Ctrl + A", "Ctrl + P", "Ctrl + Shift + P", "Alt + P"],
     correct: "Ctrl + P",
   },{
@@ -584,7 +584,7 @@ const quizArray = [
   
   {
     id: "99",
-    question: "The shortcut key to open the Transitions tab and add transitions between slides.?",
+    question: "The shortcut key to open the Transitions tab and add transitions between slides?",
     options: ["Ctrl + K", "Ctrl + T", "Alt + K", "Alt + T"],
     correct: "Alt + K",
   },

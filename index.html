@@ -34,7 +34,7 @@
                         Wrong Password...
                     </small>
                     <p id="show_password">
-                        <input type="checkbox" onclick="show_password()" id="check"> Show Password
+                        <input type="checkbox" onclick="show_password()" id="check"> <abbr id="s_pass"> Show Password </abbr> 
                     </p>
 
                     <button type="submit" id="login_btn">Login</button>
@@ -50,6 +50,11 @@
                     <small id="email_notice"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>Email id already exist.</small>
                     <input type="number" required="required" placeholder="Phone" id="phone">
                     <input type="password" required="required" placeholder="Password" id="password">
+                    
+                    <p id="show_password">
+                        <input type="checkbox" onclick="show_password()" id="check"> <q id="s_pass"> Show Password </q> 
+                    </p>
+
                     <button type="submit" id="signup_btn">Sign up</button>
             </form>
             <p>Already have an account? <span id="login_link">Login</span></p>

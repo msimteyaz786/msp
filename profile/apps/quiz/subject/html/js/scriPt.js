@@ -134,9 +134,9 @@ const quizArray = [
   },
   {
     id: "19",
-    question: "HTML comment begins with_____ symbol.",
-    options: ["Gratter than(>)", "Less than(<)", "&lt;!", "!&gt;"],
-    correct: "Less than(<)",    
+    question: "Border-spacing is given in _________.",
+    options: ["cm", "pixels", "mm", "inch"],
+    correct: "pixels",    
   },
   {
     id: "20",
@@ -158,7 +158,7 @@ const quizArray = [
   },{
     id: "23",
     question: "The tags elements in XML are ________.",
-    options: ["case insensitive", "case sensitive", "browser dependent", "ALl of the above"],
+    options: ["case insensitive", "case sensitive", "browser dependent", "All of the above"],
     correct: "case sensitive",    
   },{
     id: "24",
@@ -167,12 +167,12 @@ const quizArray = [
     correct: "case insensitive",    
   },{
     id: "25",
-    question: "Which of the following tag <...> is used to define in a drop-down selection list",
+    question: "Which of the following tag <...> is used to define in a drop-down selection list?",
     options: ["select tag", "list tag", "option tag", "dropdown"],
     correct: "option tag",    
   },{
     id: "26",
-    question: "Which of the following tag <...> is used to create in a drop-down selection list",
+    question: "Which of the following tag <...> is used to create in a drop-down selection list?",
     options: ["select tag", "list tag", "option tag", "dropdown"],
     correct: "select tag",   
   },{
@@ -225,7 +225,7 @@ const quizArray = [
   },
   {
     id: "36",
-    question: "All HTML documents will be basically_______",
+    question: "All HTML documents will be basically_______.",
     options: ["Text", "Pictures", "None", "Graphs"],
     correct: "Text",    
   },
@@ -321,7 +321,7 @@ const quizArray = [
   },
   {
     id: "53",
-    question: "Which element represent proformed text?",
+    question: "Which element represent preformed text according to the keyboard?",
     options: ["main tag", "pre tag", "dir tag", "dd tag"],
     correct: "pre tag",    
   },
@@ -345,13 +345,13 @@ const quizArray = [
   },
   {
     id: "56",
-    question: "HTML links are Defined with <_a_> 'anchor' Tag Address Is Specified By Attribute",
+    question: "HTML links are Defined with <_a_> 'anchor' Tag Address is Specified By Attribute:",
     options: ["href", "hlink", "src", "src-link"],
     correct: "href",    
   },
   {
     id: "57",
-    question: "To create HTML documents you require a ",
+    question: "To create HTML documents you require a: ",
     options: ["Web jpage editing software", "High powered computer", "Just a notepad can be used", "None of the above"],
     correct: "Just a notepad can be used",    
   },
@@ -363,7 +363,7 @@ const quizArray = [
   },
   {
     id: "59",
-    question: "HTMl web pages can be raad by ______.",
+    question: "HTML web pages can be read by ______.",
     options: ["Compiler", "Server", "Web Browser", "Interpreter"],
     correct: "Web Browser",    
   },
@@ -375,7 +375,7 @@ const quizArray = [
   },
   {
     id: "61",
-    question: "How to create a checkbox in HTML form",
+    question: "How to create a checkbox in HTML form?",
     options: ['input type="text" ', 'input type="textarea"', 'input type="checkbox"', 'input type="button"'],
     correct: 'input type="checkbox"',    
   },
@@ -391,17 +391,17 @@ const quizArray = [
     correct: "1990",    
   },{
     id: "62",
-    question: "What does <main> iclude?",
+    question: "What does include in 'main' tag?",
     options: ["Header", "Sidebar", "Artical", "Footer"],
     correct: "Header",    
   },{
     id: "62",
-    question: "The _________ element can be used to identify your html file to the outside world",
-    options: ["Title", "Body", "Head", "NOne"],
+    question: "The _________ element can be used to identify your html file to the outside world.",
+    options: ["Title", "Body", "Head", "None"],
     correct: "Title",    
   },{
     id: "62",
-    question: "The symbol that identities that 'href' attribute as the name of a name anchor rather than an address or filename is.",
+    question: "The symbol that identifies that 'href' attribute as the name of a name anchor rather than an address or filename is:",
     options: ['"&"', '"#"', '"!"', '"%"'],
     correct: '"#"',    
   },{
@@ -411,12 +411,12 @@ const quizArray = [
     correct: "Hypertext",    
   },{
     id: "62",
-    question: "The tag to give visual divison between sections of the page and which causes the browserd to draw an embossed line is.",
+    question: "The tag to give visual divison between sections of the page and which causes the browser to draw an embossed line is:",
     options: ["HL Tag", "HR Tag", "UR tag", "None of these"],
     correct: "HR Tag",    
   },{
     id: "62",
-    question: "In HTMl ______ tag contains the information about the current document such as title etc",
+    question: "In HTML ______ tag contains the information about the current document such as title etc.",
     options: ["Body", "TD", "Head", "None of these"],
     correct: "Head",    
   },{
@@ -426,14 +426,14 @@ const quizArray = [
     correct: "Text, Picture, Video, Animatin, Sound",    
   },{
     id: "62",
-    question: "The domain for India is___________.",
+    question: "The domain for India is ___________.",
     options: [".ind", ".org", ".in", ".gov"],
     correct: ".in",    
   },{
     id: "62",
     question: "Which of the following is used to read an HTML page and render it?",
-    options: ["Web Server", "Web Network", "web Browser", "Web Matrix"],
-    correct: "web Browser",    
+    options: ["Web Server", "Web Network", "Web Browser", "Web Matrix"],
+    correct: "Web Browser",    
   },{
     id: "62",
     question: "In which part of the HTML metadata is contained",
@@ -441,12 +441,12 @@ const quizArray = [
     correct: "Head Tag",    
   },{
     id: "62",
-    question: "Which element is used to het highlight text in HTML5?",
+    question: "Which element is used to the highlight text in HTML5?",
     options: ["Marquee tag", "Mark tag", "Highlight tag", "Botd tag"],
     correct: "Mark tag",    
   },{
     id: "62",
-    question: "Which of the following is not the element accociated with the HTMl table layout?",
+    question: "Which of the following is not the element accociated with the HTML table layout?",
     options: ["Spanning", "Color", "Alignment", "Size"],
     correct: "Spanning",    
   },{
@@ -476,23 +476,23 @@ const quizArray = [
     correct: "To create horizontal rule between sections",    
   },{
     id: "62",
-    question: "Which attribute is not exxential used iframe tag?",
+    question: "Which attribute is not eccential used iframe tag?",
     options: ["Frameborder", "Width", "Height", "src"],
     correct: "Frameborder",    
   },{
     id: "82",
-    question: "Which works similar to b tag in html?",
+    question: "Which works similar to 'b' tag in html?",
     options: ["blockquote", "strong", "em", "i"],
     correct: "strong",    
   },{
     id: "83",
-    question: "Which atribute specifies a uniquw alphanumberic identifier to be asscociated with an element?",
+    question: "Which atribute specifies a unique alphanumberic identifier to be asscociated with an element?",
     options: ["Class", "Id", "Article", "Type"],
     correct: "Id",    
   },{
     id: "84",
-    question: "Whic of the following is an HTML specification used to add more information to HTML tags?",
-    options: ["MOdifydata", "Minidata", "Macrodata", "Microdata"],
+    question: "Which of the following is an HTML specification used to add more information to HTML tags?",
+    options: ["Modifydata", "Minidata", "Macrodata", "Microdata"],
     correct: "Microdata",    
   },{
     id: "85",
@@ -511,7 +511,7 @@ const quizArray = [
     correct: "Multiple",    
   },{
     id: "88",
-    question: "Modernizr does actually add missing functionalities to browesers save for the HTML5 tags styling support.",
+    question: "Modernizer does actually add missing functionalities to browsers save for the HTML5 tags styling support.",
     options: ["TRUE", "FALSE", "Nothing can be said", "None of the mentioned"],
     correct: "FALSE",    
   },{
@@ -561,7 +561,7 @@ const quizArray = [
     correct: "Font-family",    
   },{
     id: "98",
-    question: "Which properties allows an image link to show a text label in HTML?",
+    question: "Which properties allows an image link to show a text lavel in HTML?",
     options: ["alt", "str", "alternate", "None of these"],
     correct: "alt",    
   },{
@@ -571,7 +571,7 @@ const quizArray = [
     correct: "RGB(0,0,0)",    
   },{
     id: "100",
-    question: "Colors are defined in HTMl using?",
+    question: "Colors are defined in HTML using?",
     options: ["RGB Values", "HEX Values", "RGBA Values", "All of the above"],
     correct: "All of the above",    
   },
