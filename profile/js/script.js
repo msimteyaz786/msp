@@ -31,10 +31,10 @@
         profile_picture.style.backgroundSize = "cover";
         profile_picture.style.backgroundPosition = "top";
 
-        profile_picture.style.cursor = "pointer";
-        profile_picture.onclick = function(){
-             window.alert("You can't change your profile pic");
-        }
+        profile_picture.style.cursor = "Not-allowed";
+        // profile_picture.onclick = function(){
+        //      window.alert("You can't change your profile pic");
+        // }
 
 
         if(localStorage.getItem(user_email+"image") != null )

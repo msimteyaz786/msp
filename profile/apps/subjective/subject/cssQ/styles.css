@@ -61,7 +61,7 @@ body {
 }
 
 .accordion-header {
-    background-color: #ff0033;
+    background: linear-gradient(to right, #3e0146, #7F00FF);    border-radius: 0px;
     color: white;
     cursor: pointer;
     padding: 15px;
@@ -81,7 +81,7 @@ body {
 .accordion-content {
     display: none;
     padding: 15px;
-    background-color: wheat;
+    background-color: white;
     border: 1px solid #ddd;
     border-top: none;
 }
