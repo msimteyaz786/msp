@@ -22,9 +22,8 @@ signup_frm.onsubmit = function()
                 signup_frm.reset();         //submit karne par reset nahi ho raha hai aur video number 3 and timing 19 minutes.
             },3000);
             return false;
+            
         }
-        
-
 }
 function show_password(){
     var chk = document.getElementById("check");
@@ -33,7 +32,6 @@ function show_password(){
     if(chk.checked){
         inpt.type="text";
         text_pass.innerHTML = "Hide Password";
-        
     }
     else{
         inpt.type="password"
@@ -41,6 +39,7 @@ function show_password(){
     }
 }
 show_password();
+
 // end signup coding.
 
 
@@ -74,6 +73,8 @@ email_input.onchange = function()
 
 // start loging coding from 
 var login_frm = document.getElementById("login_frm");
+
+
 
 login_frm.onsubmit = function()
 {
@@ -120,32 +121,12 @@ login_frm.onsubmit = function()
                                 login_password_war.style.display = "none";
                                 password.style.borderBottomColor = "#ccc"
                             }
+                            
                         }
+                        
                 }
+                
         }
-return false;
-}
-
-// end loging coding.
-
-
-
-// function show_password(){
-//     var a=document.getElementById("login_password");
-//     a.type="text";
-
-// }
-function show_password(){
-    var chk = document.getElementById("check");
-    var inpt = document.getElementById("login_password");
-    var text_pass = document.getElementById("s_pass");
-    if(chk.checked){
-        inpt.type="text";
-        text_pass.innerHTML = "Hide Password";
         
-    }
-    else{
-        inpt.type="password"
-        text_pass.innerHTML = "Show Password";
-    }
+return false;
 }

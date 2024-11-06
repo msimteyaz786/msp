@@ -84,8 +84,8 @@ body {
     display: none;
     padding: 15px;
     /* background-color: rgb(238, 244, 240); */
-    background-color: #ff7200;
-    border: 1px solid #ddd;
+    background: linear-gradient(to right, #110014, #47038a);    border-radius: 0px;
+    border: px solid #ddd;
     border-top: none;
 }
 

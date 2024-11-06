@@ -153,7 +153,7 @@ const quizArray = [
     correct: "Machine",
   },{
     id: "24",
-    question: "These divices provide a means of communication between a computer and outer world.",
+    question: "These devices provide a means of communication between a computer and outer world.",
     options: ["Input/Output Devices", "Compact", "Storage", "Drivers"],
     correct: "Input/Output Devices",
   },{
@@ -214,7 +214,7 @@ const quizArray = [
     correct: "double clicking",
   },{
     id: "36",
-    question: "Mouse is ____________ device",
+    question: "Mouse is ____________ device.",
     options: ["Input", "Output", "Software", "Storage"],
     correct: "Input",
   },{
@@ -267,8 +267,8 @@ const quizArray = [
   {
     id: "46",
     question: "UNIVAC stands for_______",
-    options: ["universal automatic calculator", "Univarsal Automatic Comupter", "Univarsal Native Input Automatic computer"],
-    correct: "Univarsal Automatic Comupter",
+    options: ["universal automatic calculator", "Univarsal Automatic Computer", "Univarsal Native Input Automatic computer"],
+    correct: "Univarsal Automatic Computer",
   },{
     id: "47",
     question: "Buying  and selling goods over web is known as________.",
@@ -306,12 +306,12 @@ const quizArray = [
     correct: "Secure",
   },{
     id: "54",
-    question: "If Your computer display wrong data and time, then you can reset it by using__________.",
+    question: "If your computer display wrong 'date and time', then you can reset it by using__________.",
     options: ["Write", "Calendar", "Control Pannel", "Write file"],
     correct: "Control Pannel",
   },{
     id: "55",
-    question: "CPU itself has following__________components.",
+    question: "CPU itself has following __________ components.",
     options: ["Control Unit (CU)", "Memory Unit (MU)", "Arithmetic Logic Unit (ALU)", "All of the above"],
     correct: "All of the above",
   },{
@@ -331,7 +331,7 @@ const quizArray = [
     correct: "A set of programs which control computer working",
   },{
     id: "59",
-    question: "Unix, Linux, DOS, Widows are expample of ________________.",
+    question: "Unix, Linux, DOS, Windows are example of ________________.",
     options: ["Word Processors", "System Programs", "Operating System", "Application Programs"],
     correct: "Operating System",
   },{
@@ -396,13 +396,13 @@ const quizArray = [
     correct: "Google",
   },{
     id: "72",
-    question: "Internet Explorer is a type of_________?",
+    question: "Internet Explorer is a type of_________.",
     options: ["Operatng System", "IP Address", "Compiler", "Browser"],
     correct: "Browser",
   },
   {
     id: "73",
-    question: "Part of the CPU, which coordinates all the functions of the computer and other components",
+    question: "Part of the CPU, which coordinates all the functions of the computer and other components?",
     options: ["Mother Board", "Coordination Board", "Control Unit", "Arthimetic Locig Unit"],
     correct: "Control Unit",
   },
@@ -478,7 +478,7 @@ const quizArray = [
     correct: "Router",
   }, {
     id: "88",
-    question: "On which principle does the catch memory work",
+    question: "On which principle does the catch memory work?",
     options: ["Position of the data", "Reference position", "State memory", "State of memory and reference"],
     correct: "Reference position",
   }, {
@@ -503,7 +503,7 @@ const quizArray = [
     correct: "Tim Berners Lee",
   }, {
     id: "93",
-    question: "Desktop Comupter, Laptop Computer, Tablets and smartphone_______There are different types of.",
+    question: "Desktop Computer, Laptop Computer, Tablets and smartphone_______. There are different types of.",
     options: ["Microcomputer", "Super computer", "Mainframe computer", "Mini computer"],
     correct: "Microcomputer",
   }, {
@@ -688,7 +688,7 @@ const quizArray = [
     correct: "Windows",
   },{
     id: "127",
-    question: "Which of the following is not RAM",
+    question: "Which of the following is not RAM?",
     options: ["FLASH", "DRAM", "SRAM", "PRAM"],
     correct: "PRAM",
   },{
@@ -799,12 +799,12 @@ const quizArray = [
     correct: "Flash",
   },{
     id: "153",
-    question: "What is the storage in internal storage",
+    question: "What is the storage in internal storage?",
     options: ["Primary", "Secondary", "Auxiliary", "Virtual"],
     correct: "Primary",
   },{
     id: "154",
-    question: "What is the storage in external storage",
+    question: "What is the storage in external storage?",
     options: ["Primary", "Secondary", "Auxiliary", "Virtual"],
     correct: "Secondary",
   },{
@@ -819,7 +819,7 @@ const quizArray = [
     correct: "RAM",
   },{
     id: "157",
-    question: "Which memory is also known as volatile memory",
+    question: "Which memory is also known as volatile memory?",
     options: ["RAM", "ROM", "C.D", "Disc"],
     correct: "RAM",
   }, {
@@ -864,7 +864,7 @@ const quizArray = [
     correct: "Disk Drive",
   }, {
     id: "166",
-    question: "Information stored in RAM is considered volatile, which meand that",
+    question: "Information stored in RAM is considered volatile, which meand that:",
     options: ["Permanently stored there", "Not permanently, but only temporarily", "stored when the power is turned off", "is permanently stored in the CPU device"],
     correct: "Not permanently, but only temporarily",
   }, {
@@ -884,7 +884,7 @@ const quizArray = [
     correct: "Character User Interface",
   },{
     id: "170",
-    question: "Linux and Windows are the examples_____?",
+    question: "Linux and Windows are the examples:",
     options: ["GUI", "CUI", "GIG", "None of these"],
     correct: "GUI",
   },{
@@ -939,7 +939,7 @@ const quizArray = [
     correct: "Windows",
   },{
     id: "181",
-    question: "Most Popular 16-bit operaitn system is?",
+    question: "The most popular 16-bit operating system is:",
     options: ["MS Dos", "Unix", "CP/M", "TRS-Dos"],
     correct: "MS Dos",
   },{
@@ -949,8 +949,8 @@ const quizArray = [
     correct: "Interconnected network",
   },{
     id: "183",
-    question: "Setting fonts for the text in document is an example",
-    options: ["Formating", "Formula", "Tracking", "tools"],
+    question: "Setting fonts for the text in document is an example:",
+    options: ["Formating", "Formula", "Tracking", "Tools"],
     correct: "Formating",
   },
   {
@@ -981,8 +981,8 @@ const quizArray = [
   },{
     id: "189",
     question: "Which among the following options specifies this action: Holding the mouse button down while moving an object of text?",
-    options: ["moving", "dragging", "saving", "highlighting"],
-    correct: "dragging",
+    options: ["Moving", "Dragging", "Saving", "Highlighting"],
+    correct: "Dragging",
   },{
     id: "190",
     question: "Which of the following has the smallest storage?",
@@ -1005,7 +1005,7 @@ const quizArray = [
     correct: "Program Counter",
   },{
     id: "191",
-    question: "What is the shortcut key for the central alignment of a line or text in MS Office",
+    question: "What is the shortcut key for the 'central alignment' of a line or text in MS Office?",
     options: ["CTRL + E", "CTRL + G", "CTRL + F", "CTRL + R"],
     correct: "CTRL + E",
   },{
@@ -1040,7 +1040,7 @@ const quizArray = [
     correct: "CTRL + SHIFT + $",
   },{
     id: "198",
-    question: "Compilers and interpreters are themselves",
+    question: "Compilers and Interpreters are themselves:",
     options: ["High Level Language", "Codes", "Programs", "Low - Level Language"],
     correct: "Programs",
   },
@@ -1087,7 +1087,7 @@ nextBtn.addEventListener(
     } else {
       //display questionCount
       countOfQuestion.innerHTML =
-        questionCount + 1 + " of " + quizArray.length + " Question";
+        questionCount + 1 + " of " + quizArray.length + " Questions";
       //display quiz
       quizDisplay(questionCount);
       count = 21;                 //timer setting start from 20 second.

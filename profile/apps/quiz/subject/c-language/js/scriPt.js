@@ -550,7 +550,7 @@ nextBtn.addEventListener(
     } else {
       //display questionCount
       countOfQuestion.innerHTML =
-        questionCount + 1 + " of " + quizArray.length + " Question";
+        questionCount + 1 + " of " + quizArray.length + " Questions";
       //display quiz
       quizDisplay(questionCount);
       count = 21;                 //timer setting start from 20 second.

@@ -61,7 +61,9 @@ body {
 }
 
 .accordion-header {
-    background-color: #ff0033;
+    background: linear-gradient(to right, #3e0146, #7F00FF);    border-radius: 0px;
+      /* Chrome 10-25, Safari 5.1-6 */
+
     color: white;
     cursor: pointer;
     padding: 4px;
@@ -71,7 +73,7 @@ body {
     width: 100%;
     font-family: sans-serif;
     font-size: 25px;
-    transition: background-color 0.3s;
+    transition: 0.1s;
 }
 
 .accordion-header:hover {
@@ -81,9 +83,10 @@ body {
 .accordion-content {
     display: none;
     padding: 10px;
-    background-color: wheat;
+    background-color: rgb(255, 255, 254);
     border: 1px solid #ddd;
     border-top: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .accordion-content p {
