@@ -61,7 +61,8 @@ body {
 }
 
 .accordion-header {
-    background: linear-gradient(to right, #3e0146, #7F00FF);    border-radius: 0px;
+    background: linear-gradient(to right, #3e0146, #7F00FF);
+        border-radius: 0px;
       /* Chrome 10-25, Safari 5.1-6 */
 
     color: white;

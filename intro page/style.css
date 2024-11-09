@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Pacifico&family=Pangolin&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0; 
+  padding: 0;
+}
+
+body {
+    background: black;
+    overflow: auto;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 60px;
+}
+#content{
+    /* width: 300px; */
+    width: 300px;
+    height: auto;
+    border: 1px solid purple;
+    color: aqua;
+    margin: 8% auto;
+    padding: 2px;
+    font-size: 18px;
+    line-height: 25px;
+    font-family: sans-serif;
+    box-shadow: 0px 0px 25px purple;
+    background-color: none;
+    border-radius: 10px;
+    padding: 25px 10px;
+    text-align: justify;
+}
+#content h1{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: white;
+}
+#content p{
+    text-align: center;
+    font-size: 14px;
+    color: white;
+}
+
+
+
+button {
+    position: relative;
+    background: transparent;
+    box-sizing: border-box;
+    border-radius: 0.6rem;
+    align-self: center;
+    font-size: 17px;
+    font-weight: 400;
+    margin: 10px;
+    padding: 20px 40px;
+    text-align: center;
+    color: aqua;
+    font-family: Pangolin;
+    font-weight: bold;
+    cursor: pointer;
+    top: 50%;
+    text-transform: uppercase;
+}
+
+.buttonBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 10px auto 15px;
+}
+
+.button1 {
+    border: 2px solid purple;
+}
+
+.button1:hover {
+    color: aqua;
+    box-shadow: 0 0 5px #f403cc,
+        0 0 25px #f403cc,
+        0 0 50px #f403cc,
+        0 0 100px #f403cc;
+}
+
+
+  /* MEDIA QUERIES */
+@media (max-width: 700px){
+        .buttonBox{
+                width: 50%;
+        }
+
+        .buttonBox:nth-child(even){
+                background-color: var(--even);
+    }
+
+    .buttonBox:nth-child(odd){
+                background-color: var(--odd);
+    }
+
+}
+
+@media (max-width: 420px){
+        .buttonBox{
+                width: 100%;
+        }
+
+        .buttonBox:nth-child(even){
+                background-color: var(--even)
+        }
+
+        .buttonBox:nth-child(odd){
+                background-color:var(--odd);
+        }
+
+}
