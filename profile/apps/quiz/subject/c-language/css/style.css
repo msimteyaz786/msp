@@ -163,17 +163,46 @@ background-color: rgba(98, 96, 96, 0.374)
   display: none;
 }
 .incorrect {
-  background-color: #fb090997;
+  background-color: #cb075297;
   color: #f43333;
   border-color: red;    
 }
 .correct {
   background-color: green;
   color: #689f38;
-  border-color: green;
+  border-color: rgb(54, 250, 54);;
   border-width: 5px;
 }
 #user-score {
   font-size: 1.5em;
   color: #ffffff;
+}
+#quiz_submitted{
+  font-size: 20px;
+  color: white; 
+  border: px solid white;
+  background: linear-gradient(to right, rgb(61, 1, 57)50%, #240246);
+  padding: 10px;
+  margin-bottom: 50px;
+  border-radius: 25px;
+}
+#checked_icon{
+  color: rgb(54, 250, 54);
+  border: px solid green;
+  font-size: 100px;
+  margin-bottom: 40px;
+  animation: scaleout 1s ease forwards;
+
+}
+section.start-animation #checked_icon{
+  animation: scaleout 1s ease forwards;
+}
+
+@keyframes scaleout{
+  0%{
+     scale: 0;
+  }
+  100%{
+   scale: 1;
+  }
 }

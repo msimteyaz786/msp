@@ -22,7 +22,8 @@ const quizArray = [
     question: "What is C Editor?",
     options: ["C Compiler", "C assember", "C code editor like notepad", "None of the above"],
     correct: "C code editor like notepad",
-  },{
+   },
+  {
     id: "1",
     question: "What is the keyword used to declare a C file pointer?",
     options: ["File", "Flle", "FILEEP", "Dilefp"],
@@ -32,7 +33,8 @@ const quizArray = [
     question: "What is the output filename of C program build process?",
     options: ["filename.ex", "filename.bak", "filename.exe", "filename.asm"],
     correct: "filename.exe",
-  },{
+  },
+  {
     id: "3",
     question: "What is the input file a C program building process?",
     options: ["filename.k", "filename.cpp.", "filename.c", "filename.C"],

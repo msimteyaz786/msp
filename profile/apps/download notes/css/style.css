@@ -181,7 +181,7 @@ body{
     cursor: pointer;
 }
 #open_btn:hover{
-    background-color: blue;
+    background: linear-gradient(to right, rgb(30, 1, 28)50%, #7F00FF);
     color: white;
     /* font-weight: bold; */
 }
