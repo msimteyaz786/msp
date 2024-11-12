@@ -11,10 +11,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #7F00FF;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: linear-gradient(to right, rgb(30, 1, 28)50%, #7F00FF);
+    /* background: black; */
+    /* background: #7F00FF; 
+    background: -webkit-linear-gradient(to right, #E100FF, #7F00FF); 
+    background: linear-gradient(to right, #E100FF, #7F00FF);  */
+    display: none;
 
 }
 #page{
@@ -24,6 +26,12 @@
     box-shadow: 0px 0px 10px #ccc;
     border-radius: 15px;
     padding: 50px 25px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 50px auto;
+    display: none;
 }
 
 #signup{
@@ -75,6 +83,7 @@
 #login_btn, #signup_btn{
     width: 100%;
     padding: 10px;
+    margin: auto;
     border: none;
     font-size: 16px;
     background: #7F00FF;  /* fallback for old browsers */
@@ -85,10 +94,10 @@
     outline: none;
     cursor: pointer;
     margin-top: 30px;
+    justify-content: center;
 }
 
 #login_btn:hover, #signup_btn:hover{
-    font-size: 18px;
     box-shadow: 0px 0px 10px #ccc;
     transition: 0.2s;
 }
