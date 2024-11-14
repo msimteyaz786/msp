@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <link rel="stylesheet" href="CSS/Contact.css"> 
+    <link rel="stylesheet" href="css/style.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
     rel="stylesheet"
@@ -23,8 +23,8 @@
 
     <div id="main_all_contact_box">
         <div id="contact_header">
-            <h1><i class="fas fa-user-circle"></i>All Contacts</h1>
-            <input type="search" placeholder="Search Your Contact Here..." id="search">
+            <h1> All Notes</h1>
+            <input type="search" placeholder="Search Your Notes....." id="search">
         </div>
         <div id="all_contact_box">
 
@@ -47,10 +47,11 @@
     <div id="contact_bg" class="animate__animated animate__fadeIn">
         <center>
         <div id="add_contact_box" class="animate__animated animate__backInDown">
-            <h1 id="c_heading">Add New Contact</h1>
+            <h1 id="c_heading">Add New Notes</h1>
             <form>
-                <input type="text" placeholder="Enter Name" id="c_name">
-                <input type="number" placeholder="Enter Mobile Number" id="c_num">
+                <input type="text" placeholder="Heading" id="c_name">
+                <!-- <input type="number" placeholder="Discription" id="c_num"> -->
+                 <textarea name="textarea" id="c_num" placeholder="Discription"></textarea>
                 <button type="submit" id="add">Add</button>
                 <button type="button" id="close">Close</button>
             </form>
