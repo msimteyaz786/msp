@@ -263,7 +263,7 @@ if(sessionStorage.getItem("user") == null)
             }
             else
             {
-                alert("Please enter name and phone number");
+                alert("Please enter Topic and Description");
                 return false;
             }
         }
