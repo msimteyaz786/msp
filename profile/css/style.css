@@ -230,10 +230,42 @@ body{
     justify-content: center;
     margin-bottom: 5px;
     margin-top: 20px;
-    
-    
-
 }
+#hindi_app{
+    width: 100%;
+    height:150px;
+    border:0px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+#hindi{
+    width: 100%;
+    height: 140px;
+    background-color: white;
+    margin: 15px;
+    /* border-radius: 20px; */
+    border: 1px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#hindi i{
+    color: purple;
+    font-size: 45px;
+}
+#hindi p{
+    font-size: 25px;
+    color: purple;
+    font-family: "Ubuntu", sans-serif;
+    margin-top: 7px;
+    text-align: center;
+    float: left;
+}
+
 @media(max-width:576px)
 {
     #app{
@@ -270,10 +302,6 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column; 
-    
-    
-    
-
 }
 #contact:hover, #player:hover, #logout:hover, #quiz:hover, #sort:hover, #aboutus:hover{
     width: 200px;

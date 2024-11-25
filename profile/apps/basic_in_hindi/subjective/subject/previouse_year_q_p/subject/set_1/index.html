@@ -1,0 +1,546 @@
+<html lang="en" oncontextmenu="window.alert('Not allowed.');return false;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MCQ Quiz</title>
+    <style>
+      * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  /* background-color: #0a69ed; */
+  background: #7F00FF;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.start-screen,
+.score-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+#start-button,
+#restart {
+  font-size: 1.3em;
+  padding: 0.5em 1.8em;
+  border-radius: 0.2em;
+}
+#restart {
+  margin-top: 0.9em;
+}
+
+#start-button:hover, #restart:hover{
+  background: #7F00FF; 
+  background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);
+  background: linear-gradient(to right, #E100FF, #7F00FF);
+  color: white;
+  box-shadow: 0px 0px 25px #ccc;
+}
+
+
+#display-container {
+  background-color: #470147e5;
+  padding: 2.1em 0.5em;
+  width: 90%;
+  max-width: 37.5em;
+  margin: 0 auto;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 0.6em;
+}
+
+#display-container h2{
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0px solid red;
+  padding: 10px;
+  margin-top: -30px;
+  text-decoration: floralwhite;
+  font-size: 18px;
+}
+@media(max-width: 320px){
+  #display-container h2{
+    font-size: 16px;
+    align-items: center;
+
+  }
+}
+
+
+
+.header {
+  margin-bottom: 1.8em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.6em;
+  color: white;
+  border-bottom: 0.1em solid #c0bfd2;
+}
+.timer-div {
+  /* background-color: #e1f5fe; */
+  width: 4.5em;
+  background-color: rebeccapurple;
+  color: white;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4em;
+  gap: 7px;
+  
+}
+#timer_icon{
+color: wheat;
+font-size: 100px;
+}
+
+
+
+.question {
+  margin-bottom: 1.25em;
+  /* font-weight: 1000; */
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  color: rgb(255, 4, 4);
+  font-size: 20px;
+  color: aqua;
+  font-family: sans-serif;
+}
+.option-div {
+  font-size: 0.9em;
+  width: 100%;
+  padding: 1em;
+  margin: 0.3em 0;
+  text-align: left;
+  outline: none;
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 0.3em;
+  color: white;
+  font-size: 15px;
+
+}
+/* .option-div:hover{
+background-color: rgba(98, 96, 96, 0.374)
+} */
+
+
+.option-div:disabled {
+  color: white;
+  cursor: not-allowed;
+}
+#next-button {
+  font-size: 18px;
+  margin-top: 0.5em;
+  background-color: #0a69ed;
+  color: #ffffff;
+  background: #7F00FF; 
+  background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);
+  background: linear-gradient(to right, #E100FF, #7F00FF);
+  padding: 0.7em 1.8em;
+  border-radius: none;
+  float: right;
+}
+
+#next-button:hover{
+  border-radius: 15px;
+  transition: 0.5s;
+    }
+
+.hide {
+  display: none;
+}
+.incorrect {
+  background-color: #cb075297;
+  color: #f43333;
+  border-color: red;    
+}
+.correct {
+  background-color: green;
+  color: #689f38;
+  border-color: rgb(54, 250, 54);;
+  border-width: 5px;
+}
+#user-score {
+  font-size: 1.5em;
+  color: #ffffff;
+}
+#quiz_submitted{
+  font-size: 20px;
+  color: white; 
+  border: px solid white;
+  background: linear-gradient(to right, rgb(61, 1, 57)50%, #240246);
+  padding: 10px;
+  margin-bottom: 50px;
+  border-radius: 25px;
+}
+#checked_icon{
+  color: rgb(54, 250, 54);
+  border: px solid green;
+  font-size: 100px;
+  margin-bottom: 40px;
+  animation: scaleout 1s ease forwards;
+
+}
+section.start-animation #checked_icon{
+  animation: scaleout 1s ease forwards;
+}
+
+@keyframes scaleout{
+  0%{
+     scale: 0;
+  }
+  100%{
+   scale: 1;
+  }
+}
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="website icon" type="jpg" href="image/mslogo.jpg" style="border-radius: 50%;">
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="start-screen">
+      <button id="start-button">Start </button>
+    </div>
+    <div id="display-container">
+      <h2 id="heading">SET 1</h2>
+      <div class="header">
+        
+        <div class="number-of-count">
+          <span class="number-of-question">1 of 100 questions</span>
+        </div>
+        <!-- <div class="timer-div">
+          <ion-icon name="alarm" id="timer-icon"></ion-icon>
+          <img src="https://i.postimg.cc/q7BCXNDy/timer-icon.png" id="timer_icon"/>
+          <span class="time-left">20s</span>
+        </div> -->
+      </div>
+      <div id="container">
+        <!-- questions and options will be displayed here -->
+      </div>
+      <button id="next-button">Next </button>
+    </div>
+    <div class="score-container hide">
+      <div id="checked_icon"><i class="fas fa-check-circle" ></i></div>
+      <div id="quiz_submitted"> Quiz Submitted Successfully !!</div>
+
+      <div id="user-score">Demo Score</div>
+      <button id="restart">Restart</button>
+    </div>
+    <!-- Script -->
+    <script src="js/scriPt.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<script>
+  //References
+let timeLeft = document.querySelector(".time-left");
+let quizContainer = document.getElementById("container");
+let nextBtn = document.getElementById("next-button");
+let countOfQuestion = document.querySelector(".number-of-question");
+let displayContainer = document.getElementById("display-container");
+let scoreContainer = document.querySelector(".score-container");
+let restart = document.getElementById("restart");
+let userScore = document.getElementById("user-score");
+let startScreen = document.querySelector(".start-screen");
+let startButton = document.getElementById("start-button");
+let questionCount;
+let scoreCount = 0;
+let count = 20;
+let countdown;
+
+//Questions and Options array
+
+const quizArray = [
+  {
+    id: "0",
+    question: "First generation computers used languages",
+    options: ["Machine", "", "", ""],
+    correct: "",
+  },
+  {
+    id: "0",
+    question: "",
+    options: ["", "", "", ""],
+    correct: "",
+  },
+  {
+    id: "0",
+    question: "",
+    options: ["", "", "", ""],
+    correct: "",
+  },
+  {
+    id: "0",
+    question: "",
+    options: ["", "", "", ""],
+    correct: "",
+  },
+  {
+    id: "0",
+    question: "",
+    options: ["", "", "", ""],
+    correct: "",
+  },
+  {
+    id: "0",
+    question: "",
+    options: ["", "", "", ""],
+    correct: "",
+  },
+  {
+    id: "0",
+    question: "",
+    options: ["", "", "", ""],
+    correct: "",
+  },
+  {
+    id: "0",
+    question: "",
+    options: ["", "", "", ""],
+    correct: "",
+  },
+  {
+    id: "0",
+    question: "",
+    options: ["", "", "", ""],
+    correct: "",
+  },
+  {
+    id: "0",
+    question: "",
+    options: ["", "", "", ""],
+    correct: "",
+  },
+  {
+    id: "0",
+    question: "",
+    options: ["", "", "", ""],
+    correct: "",
+  },
+  {
+    id: "0",
+    question: "",
+    options: ["", "", "", ""],
+    correct: "",
+  },
+  {
+    id: "0",
+    question: "",
+    options: ["", "", "", ""],
+    correct: "",
+  },
+  {
+    id: "0",
+    question: "",
+    options: ["", "", "", ""],
+    correct: "",
+  },
+  {
+    id: "0",
+    question: "",
+    options: ["", "", "", ""],
+    correct: "",
+  },
+  {
+    id: "0",
+    question: "",
+    options: ["", "", "", ""],
+    correct: "",
+  },
+  {
+    id: "0",
+    question: "",
+    options: ["", "", "", ""],
+    correct: "",
+  },
+  {
+    id: "0",
+    question: "",
+    options: ["", "", "", ""],
+    correct: "",
+  },
+  {
+    id: "0",
+    question: "सबसे पहला कंप्युटर का क्या नाम था ?",
+    options: ["ATARIS", "ENIAC", "TANDY", "इनमे  कोई नहीं"],
+    correct: "ENIAC",
+  },
+  
+  
+  
+
+
+];
+
+//Restart Quiz
+restart.addEventListener("click", () => {
+  initial();
+  displayContainer.classList.remove("hide");
+  scoreContainer.classList.add("hide");
+});
+
+//Next Button
+nextBtn.addEventListener(
+  "click",
+  (displayNext = () => {
+    //increment questionCount
+    questionCount += 1;
+    //if last question
+    if (questionCount == quizArray.length) {
+      //hide question container and display score
+      displayContainer.classList.add("hide");
+      scoreContainer.classList.remove("hide");
+      //user score
+      userScore.innerHTML =
+        "Your score is " + scoreCount + " out of " + questionCount;
+    } else {
+      //display questionCount
+      countOfQuestion.innerHTML =
+        questionCount + 1 + " of " + quizArray.length + " Question";
+      //display quiz
+      quizDisplay(questionCount);
+      count = 21;                 //timer setting start from 20 second.
+      clearInterval(countdown);
+      timerDisplay();
+    }
+  })
+);
+
+//Timer
+const timerDisplay = () => {
+  countdown = setInterval(() => {
+    count--;
+    timeLeft.innerHTML = `${count}s`;
+    if (count == 0) {
+      clearInterval(countdown);
+      displayNext();
+    }
+  }, 1000);
+}
+
+//Display quiz
+const quizDisplay = (questionCount) => {
+  let quizCards = document.querySelectorAll(".container-mid");
+  //Hide other cards
+  quizCards.forEach((card) => {
+    card.classList.add("hide");
+  });
+  //display current question card
+  quizCards[questionCount].classList.remove("hide");
+};
+
+//Quiz Creation
+function quizCreator() {
+  //randomly sort questions
+  quizArray.sort(() => Math.random() - 0.5);
+  //generate quiz
+  for (let i of quizArray) {
+    //randomly sort options
+    i.options.sort(() => Math.random() - 0.5);
+    //quiz card creation
+    let div = document.createElement("div");
+    div.classList.add("container-mid", "hide");
+    //question number
+    countOfQuestion.innerHTML = 1 + " of " + quizArray.length + " Question";
+    //question
+    let question_DIV = document.createElement("p");
+    question_DIV.classList.add("question");
+    question_DIV.innerHTML = i.question;
+    div.appendChild(question_DIV);
+    //options
+    div.innerHTML += `
+    <button class="option-div" onclick="checker(this)">${i.options[0]}</button>
+     <button class="option-div" onclick="checker(this)">${i.options[1]}</button>
+      <button class="option-div" onclick="checker(this)">${i.options[2]}</button>
+       <button class="option-div" onclick="checker(this)">${i.options[3]}</button>
+    `;
+    quizContainer.appendChild(div);
+  }
+}
+
+//Checker Function to check if option is correct or not
+function checker(userOption) {
+  let userSolution = userOption.innerText;
+  let question =
+    document.getElementsByClassName("container-mid")[questionCount];
+  let options = question.querySelectorAll(".option-div");
+
+  //if user clicked answer == correct option stored in object
+  if (userSolution === quizArray[questionCount].correct) {
+    userOption.classList.add("correct");
+    scoreCount++;
+  } else {
+    userOption.classList.add("incorrect");
+    //For marking the correct option
+    options.forEach((element) => {
+      if (element.innerText == quizArray[questionCount].correct) {
+        element.classList.add("correct");
+      }
+    });
+  }
+
+  //clear interval(stop timer)
+  clearInterval(countdown);
+  //disable all options
+  options.forEach((element) => {
+    element.disabled = true;
+  });
+}
+
+//initial setup
+function initial() {
+  quizContainer.innerHTML = "";
+  questionCount = 0;
+  scoreCount = 0;
+  count = 20;
+  clearInterval(countdown);
+  timerDisplay();
+  quizCreator();
+  quizDisplay(questionCount);
+}
+
+//when user click on start button
+startButton.addEventListener("click", () => {
+  startScreen.classList.add("hide");
+  displayContainer.classList.remove("hide");
+  initial();
+});
+
+//hide quiz and display start screen
+window.onload = () => {
+  startScreen.classList.remove("hide");
+  displayContainer.classList.add("hide");
+};
+</script>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<html lang="en" oncontextmenu="window.alert('Not allowed.');return false;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MCQ Quiz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="website icon" type="jpg" href="image/mslogo.jpg" style="border-radius: 50%;">
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="start-screen">
+      <button id="start-button">Start Game</button>
+    </div>
+    <div id="display-container">
+      <h2 id="heading">DBMS</h2>
+      <div class="header">
+        
+        <div class="number-of-count">
+          <span class="number-of-question">1 of 100 questions</span>
+        </div>
+        <div class="timer-div">
+          <!-- <ion-icon name="alarm" id="timer-icon"></ion-icon> -->
+          <img src="https://i.postimg.cc/q7BCXNDy/timer-icon.png" id="timer_icon"/>
+          <span class="time-left">20s</span>
+        </div>
+      </div>
+      <div id="container">
+        <!-- questions and options will be displayed here -->
+      </div>
+      <button id="next-button">Next→ </button>
+    </div>
+    <div class="score-container hide">
+      <div id="checked_icon"><i class="fas fa-check-circle" ></i></div>
+      <div id="quiz_submitted"> Quiz Submitted Successfully !!</div>
+
+      <div id="user-score">Demo Score</div>
+      <button id="restart">Restart</button>
+    </div>
+    <!-- Script -->
+    <script src="js/scriPt.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+  </body>
+</html>

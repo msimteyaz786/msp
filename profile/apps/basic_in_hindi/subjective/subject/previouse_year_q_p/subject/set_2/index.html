@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en" oncontextmenu="window.alert('Not allowed.');return false;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MCQ Quiz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="website icon" type="jpg" href="image/mslogo.jpg" style="border-radius: 50%;">
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Set 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            /* background-color: #f8f9fa; */
+            color: #333;
+            background: #7F00FF;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #E100FF, #7F00FF);
+            /* overflow: hidden; */
+            animation: color 12s ease-in-out infinite;
+
+        }
+        #heading{
+            width: 100%;
+            color: green;
+            text-align: center;
+            border: 2px solid purple;
+            padding-top: 0px;
+            font-size: 25px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            border-radius: 500px;
+            background-color: rgb(129, 2, 129);
+            color: white;
+            
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            /* background: #fff; */
+            background:white;
+            padding: 10px;
+            box-shadow: 0px 0px 50px #ccc;
+            border-style: solid;
+            border-width: 4px;
+            border-color: transparent;
+            border-image: linear-gradient(170deg, red, blue,Yellow,Black,brown,rgb(223, 2, 223),tan,magenta,orange,indigo,navy,green,rgb(227, 5, 42));
+            border-image-slice: 1;
+            animation: color 12s ease-in-out infinite;
+        }
+        @keyframes color{
+          0%{
+          background-position: 0 50%;
+          }
+          50%{
+          background-position: 100% 50%;
+          }
+          100%{
+          background-position: 0 50%;
+          }
+        }
+
+        .question {
+            margin-bottom: 30px;
+        }
+
+        .question h3 {
+            margin: 0;
+            font-size: 18px;
+            color: red;
+        }
+
+        .options {
+            margin-top: 10px;
+            /* color: blue; */
+        }
+
+        .options label {
+            display: block;
+            margin-bottom: 8px;
+            cursor: pointer;
+        }
+
+        .answer, .feedback {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        .answer {
+            background: #01a201;
+            color: white;
+            border-left: 4px solid #03f80b;
+        }
+
+        .feedback.correct {
+            background: #d4edda;
+            border-left: 4px solid #28a745;
+        }
+
+        .feedback.incorrect {
+            background: #f8d7da;
+            border-left: 4px solid #dc3545;
+        }
+
+        .question-buttons {
+            margin-top: 10px;
+        }
+
+        .question-buttons button {
+            padding: 8px 16px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .show-btn {
+            /* background-color: #007bff; */
+            color: #fff;
+            background-color: #b702cbf3;
+        }
+
+        .hide-btn {
+            /* background-color: #6c757d; */
+            color: #fff;
+            background-color: rgba(128, 0, 0, 0.66);
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+
+            .question-buttons button {
+                font-size: 12px;
+                padding: 6px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div id="heading">SET 1</div> <BR>
+
+    <div class="question" data-correct="Paris">
+        <h3>1. A computer cannot perform which fo the following functions?</h3> (IBPS Clerk 2015)
+        <div class="options">
+            <label><input type="radio" name="q1" value="Berlin">  Division</label>
+            <label><input type="radio" name="q1" value="Madrid"> Subtraction</label>
+            <label><input type="radio" name="q1" value="Paris"> Bake a cake</label>
+            <label><input type="radio" name="q1" value="Rome"> Addition</label>
+        </div>
+        <div class="feedback"></div>
+        <div class="answer">Correct Answer: Bake a cake</div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+
+    <div class="question" data-correct="Processing">
+        <h3>2. Part number, description and number of parts ordered are example of______.</h3> [IBPS Clerck 2013]
+        <div class="options">
+            <label><input type="radio" name="q2" value="Input"> Input</label>
+            <label><input type="radio" name="q2" value="Output"> Output</label>
+            <label><input type="radio" name="q2" value="Control"> Control</label>
+            <label><input type="radio" name="q2" value="Processing"> Processing</label>
+        </div>
+        <div class="feedback"></div>
+        <div class="answer">Correct Answer: Processing
+        </div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+
+    <div class="question" data-correct="data">
+        <h3>3. A collection o funprocessed items is</h3> [SBI PO 2015]
+        <div class="options">
+            <label><input type="radio" name="q3" value="data"> data</label>
+            <label><input type="radio" name="q3" value="memory"> memory</label>
+            <label><input type="radio" name="q3" value="reports"> reports</label>
+            <label><input type="radio" name="q3" value="none of these"> none of these</label>
+        </div>
+        <div class="feedback"></div>
+        <div class="answer">Correct Answer : data</div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+    <div class="question" data-correct="Data">
+        <h3>4. Which among the following cycle consists of an input, processing, output and storage as its constituents ?</h3> [IBPS Clerck Mains 2017]
+        <div class="options">
+            <label><input type="radio" name="q4" value="Input"> Input</label>
+            <label><input type="radio" name="q4" value="Data"> Data</label>
+            <label><input type="radio" name="q4" value="Processing"> Processing</label>
+            <label><input type="radio" name="q4" value="Storage"> Storage</label>
+        </div>
+        <div class="feedback"></div>
+        <div class="answer">Correct Answer: Data</div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+    <div class="question" data-correct="Information">
+        <h3>5. _______is data that has been organised and presented in a meaningful fashion.</h3> [IBPS Clerck Mains 2017]
+        <div class="options">
+            <label><input type="radio" name="q5" value="Information"> Information</label>
+            <label><input type="radio" name="q5" value="A process"> A process</label>
+            <label><input type="radio" name="q5" value="Data"> Data</label>
+            <label><input type="radio" name="q5" value="Software"> Software</label>
+        </div>
+        <div class="feedback"></div>
+        <div class="answer">Correct Answer: Information</div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+    <div class="question" data-correct="instruction">
+        <h3>6. The steps and tasks needed to precess data, such as responses to questions or clicking an icon, are called</h3> [IBPS Clerk Mains 2017]
+        <div class="options">
+            <label><input type="radio" name="q6" value="the operating system"> the operating system</label>
+            <label><input type="radio" name="q6" value="the system unit"> the system unit</label>
+            <label><input type="radio" name="q6" value="the hardware unit"> the hardware unit</label>
+            <label><input type="radio" name="q6" value="instruction"> instruction</label>
+        </div>
+        <div class="feedback"></div>
+        <div class="answer">Correct Answer: instruction</div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+    <div class="question" data-correct="counter wheels">
+        <h3>7. The Analytical Engine developed during first generation of computers used _________ as a memory unit.</h3>[RBI Grade B 2012]
+        <div class="options">
+            <label><input type="radio" name="q7" value="counter wheels"> counter wheels</label>
+            <label><input type="radio" name="q7" value="cards"> cards</label>
+            <label><input type="radio" name="q7" value="floppips"> floppips</label>
+            <label><input type="radio" name="q7" value="RAM"> RAM</label>
+        </div>
+        <div class="feedback"></div>
+        <div class="answer">Correct Answer: counter wheels</div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+    <div class="question" data-correct="EDSAC">
+        <h3>8. The first computer which provides storage is</h3> [SSC CPO 2012]
+        <div class="options">
+            <label><input type="radio" name="q8" value="EDVAC"> EDVAC</label>
+            <label><input type="radio" name="q8" value="EDSAC"> EDSAC</label>
+            <label><input type="radio" name="q8" value="ACE"> ACE</label>
+            <label><input type="radio" name="q8" value="MARK-I"> MARK-I</label>
+        </div>
+        <div class="feedback"></div>
+        <div class="answer">Correct Answer: EDSAC</div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+
+    <div class="question" data-correct="UNIVAC">
+        <h3>9. Name the first general propose electonic computer.</h3> [IBPS PO 2012]
+        <div class="options">
+            <label><input type="radio" name="q9" value="UNIVAC"> UNIVAC</label>
+            <label><input type="radio" name="q9" value="EDVAC"> EDVAC</label>
+            <label><input type="radio" name="q9" value="ADVAC"> ADVAC</label>
+            <label><input type="radio" name="q9" value="ADSAC"> ADSAC</label>
+        </div>
+        <div class="feedback"></div>
+        <div class="answer">Correct Answer: UNIVAC</div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+
+    <div class="question" data-correct="Machine">
+        <h3>10. First generation computers used languages.</h3> [SBI Clerk 2012]
+        <div class="options">
+            <label><input type="radio" name="q10" value="High Level"> High Level</label>
+            <label><input type="radio" name="q10" value="Machine"> Machine</label>
+            <label><input type="radio" name="q10" value="Assmbly"> Assmbly</label>
+            <label><input type="radio" name="q10" value="None of these"> None of these</label>
+        </div>
+        <div class="feedback"></div>
+        <div class="answer">Correct Answer: Machine</div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+    <div class="question" data-correct="micro seconds">
+        <h3>11. Speed of first generation computer was in </h3> [IBPS Clerk 2012]
+        <div class="options">
+            <label><input type="radio" name="q11" value="micro seconds"> micro seconds</label>
+            <label><input type="radio" name="q11" value="mili seconds"> mili seconds</label>
+            <label><input type="radio" name="q11" value="nano seconsecon"> nano secon</label>
+            <label><input type="radio" name="q11" value="none of these"> none of these</label>
+        </div>
+        <div class="feedback"></div>
+        <div class="answer">Correct Answer: micro seconds</div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+    <div class="question" data-correct="third generation">
+        <h3>12. Integrated chips of IC's were started to be use from which generation of computer?</h3>[IBPS PO 2016]
+        <div class="options">
+            <label><input type="radio" name="q12" value="first generation"> first generation</label>
+            <label><input type="radio" name="q12" value="second generation"> second generation</label>
+            <label><input type="radio" name="q12" value="third generation"> third generation</label>
+            <label><input type="radio" name="q12" value="fourth generation"> fourth generation</label>
+        </div>
+        <div class="feedback"></div>
+        <!-- <div class="answer">Correct Answer: </div> -->
+        <div class="answer">Correct Answer : third generation</div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+    <div class="question" data-correct="second">
+        <h3>13. The time sharing became possible in _______ generation of computers.</h3> [SBI PO 2011]
+        <div class="options">
+            <label><input type="radio" name="q13" value="first"> first</label>
+            <label><input type="radio" name="q13" value="second"> second</label>
+            <label><input type="radio" name="q13" value="third"> third</label>
+            <label><input type="radio" name="q13" value="fourth"> fourth</label>
+        </div>
+        <div class="feedback"></div>
+        <div class="answer">Correct Answer: second</div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+
+    <div class="question" data-correct="integrated circuit">
+        <h3>14. Chip is a common nickname for a/an</h3> [IBPS Clerk 2014, 2015]
+        <div class="options">
+            <label><input type="radio" name="q14" value="integrated circuit"> integrated circuit</label>
+            <label><input type="radio" name="q14" value="transistor"> transistor</label>
+            <label><input type="radio" name="q14" value="registor"> registor</label>
+            <label><input type="radio" name="q14" value="semiconductor"> semiconductor</label>
+        </div>
+        <div class="feedback"></div>
+        <div class="answer">Correct Answer: integrated circuit</div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+
+    <div class="question" data-correct="integrated circuits">
+        <h3>15. The third generation computers were made with </h3> [SBI PO 2014]
+        <div class="options">
+            <label><input type="radio" name="q15" value="integrated circuits"> integrated circuits</label>
+            <label><input type="radio" name="q15" value="bio chips"> bio chips</label>
+            <label><input type="radio" name="q15" value="discrete components"> discrete components</label>
+            <label><input type="radio" name="q15" value="vacuum tubes"> vacuum tubes</label>
+        </div>
+    </div>
+
+    <div class="question" data-correct="silicon">
+        <h3>16. Integrated circuit (IC) or chips used in computers are made with </h3>[IBPS Clerk 2014] 
+        <div class="options">
+            <label><input type="radio" name="q16" value="silicon"> silicon</label>
+            <label><input type="radio" name="q16" value="coper"> coper</label>
+            <label><input type="radio" name="q16" value="silver"> silver</label>
+            <label><input type="radio" name="q16" value="gold"> gold</label>
+        </div>
+        <div class="feedback"></div>
+        <div class="answer">Correct Answer: silicon</div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+
+    <div class="question" data-correct="integrated circuit">
+        <h3>17. A complete electonic circuit with transistors and other electonic components on a small silicon chip is called a/an</h3>  [RBI 2012]
+        <div class="options">
+            <label><input type="radio" name="q17" value="integrated circuit"> integrated circuit</label>
+            <label><input type="radio" name="q17" value="workstation"> workstation</label>
+            <label><input type="radio" name="q17" value="CPU"> CPU</label>
+            <label><input type="radio" name="q17" value="magnetic disk"> magnetic disk</label>
+        </div>
+        <div class="feedback"></div>
+        <div class="answer">Correct Answer: integrated circuit</div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+
+    <div class="question" data-correct="micprocessors">
+        <h3>18. PCs are considered fourth-generation fourth generation and contain</h3> [SBI PO 2014]
+        <div class="options">
+            <label><input type="radio" name="q18" value="micprocessors"> micprocessors</label>
+            <label><input type="radio" name="q18" value="transistors"> transistors</label>
+            <label><input type="radio" name="q18" value="data"> data</label>
+            <label><input type="radio" name="q18" value="vacuum tubes"> vacuum tubes</label>
+        </div>
+        <div class="feedback"></div>
+        <div class="answer">Correct Answer: micprocessors</div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+
+    <div class="question" data-correct="a">
+        <h3>19. Which of the following options correctly expressses the meaning of the term 'PCs'?</h3>[IBPS PO 2012] 
+        <div class="options">
+            <label><input type="radio" name="q19" value="a"> Personal computers eidely available ti individual workers with which they can access information from layer system and increase their personal productivity</label>
+            <label><input type="radio" name="q19" value="b"> Computer manufactured by the Pentinum company</label>
+            <label><input type="radio" name="q19" value="c"> Packed computers system formed by  joining together of various computer terminals</label>
+            <label><input type="radio" name="q19" value="d"> None of these</label>
+        </div>
+        <div class="feedback"></div>
+        <div class="answer">Correct Answer: (A)</div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+
+    <div class="question" data-correct="Personal Computer">
+        <h3>20. Which of the following is a small micprocessors based computer designed to be used by one person at a time?</h3>[SBI Clerk 2014] 
+        <div class="options">
+            <label><input type="radio" name="q20" value="Personal Computer"> Personal Computer</label>
+            <label><input type="radio" name="q20" value="Notebook"> Notebook</label>
+            <label><input type="radio" name="q20" value="Netbook"> Netbook</label>
+            <label><input type="radio" name="q20" value="None of these"> None of these</label>
+        </div>
+        <div class="feedback"></div>
+        <div class="answer">Correct Answer: Personal Computer</div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+
+    <div class="question" data-correct="">
+        <h3></h3> 
+        <div class="options">
+            <label><input type="radio" name="q1" value=""> </label>
+            <label><input type="radio" name="q1" value=""> </label>
+            <label><input type="radio" name="q1" value=""> </label>
+            <label><input type="radio" name="q1" value=""> </label>
+        </div>
+        <div class="feedback"></div>
+        <div class="answer">Correct Answer: </div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+
+    <div class="question" data-correct="">
+        <h3></h3> 
+        <div class="options">
+            <label><input type="radio" name="q1" value=""> </label>
+            <label><input type="radio" name="q1" value=""> </label>
+            <label><input type="radio" name="q1" value=""> </label>
+            <label><input type="radio" name="q1" value=""> </label>
+        </div>
+        <div class="feedback"></div>
+        <div class="answer">Correct Answer: </div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+
+    <div class="question" data-correct="">
+        <h3></h3> 
+        <div class="options">
+            <label><input type="radio" name="q1" value=""> </label>
+            <label><input type="radio" name="q1" value=""> </label>
+            <label><input type="radio" name="q1" value=""> </label>
+            <label><input type="radio" name="q1" value=""> </label>
+        </div>
+        <div class="feedback"></div>
+        <div class="answer">Correct Answer: </div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+
+    <div class="question" data-correct="">
+        <h3></h3> 
+        <div class="options">
+            <label><input type="radio" name="q1" value=""> </label>
+            <label><input type="radio" name="q1" value=""> </label>
+            <label><input type="radio" name="q1" value=""> </label>
+            <label><input type="radio" name="q1" value=""> </label>
+        </div>
+        <div class="feedback"></div>
+        <div class="answer">Correct Answer: </div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+
+    <div class="question" data-correct="">
+        <h3></h3> 
+        <div class="options">
+            <label><input type="radio" name="q1" value=""> </label>
+            <label><input type="radio" name="q1" value=""> </label>
+            <label><input type="radio" name="q1" value=""> </label>
+            <label><input type="radio" name="q1" value=""> </label>
+        </div>
+        <div class="feedback"></div>
+        <div class="answer">Correct Answer: </div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+
+    <div class="question" data-correct="">
+        <h3></h3> 
+        <div class="options">
+            <label><input type="radio" name="q1" value=""> </label>
+            <label><input type="radio" name="q1" value=""> </label>
+            <label><input type="radio" name="q1" value=""> </label>
+            <label><input type="radio" name="q1" value=""> </label>
+        </div>
+        <div class="feedback"></div>
+        <div class="answer">Correct Answer: </div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+
+    <div class="question" data-correct="">
+        <h3></h3> 
+        <div class="options">
+            <label><input type="radio" name="q1" value=""> </label>
+            <label><input type="radio" name="q1" value=""> </label>
+            <label><input type="radio" name="q1" value=""> </label>
+            <label><input type="radio" name="q1" value=""> </label>
+        </div>
+        <div class="feedback"></div>
+        <div class="answer">Correct Answer: </div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+
+    <div class="question" data-correct="">
+        <h3></h3> 
+        <div class="options">
+            <label><input type="radio" name="q1" value=""> </label>
+            <label><input type="radio" name="q1" value=""> </label>
+            <label><input type="radio" name="q1" value=""> </label>
+            <label><input type="radio" name="q1" value=""> </label>
+        </div>
+        <div class="feedback"></div>
+        <div class="answer">Correct Answer: </div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+
+    <div class="question" data-correct="">
+        <h3></h3> 
+        <div class="options">
+            <label><input type="radio" name="q1" value=""> </label>
+            <label><input type="radio" name="q1" value=""> </label>
+            <label><input type="radio" name="q1" value=""> </label>
+            <label><input type="radio" name="q1" value=""> </label>
+        </div>
+        <div class="feedback"></div>
+        <div class="answer">Correct Answer: </div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+
+
+    
+
+</div>
+
+<script>
+    // Show or hide the correct answer
+    function toggleAnswer(button, show) {
+        const question = button.closest('.question');
+        const answer = question.querySelector('.answer');
+        answer.style.display = show ? 'block' : 'none';
+    }
+
+    // Add event listeners to all radio buttons to check the answer
+    document.querySelectorAll('.question').forEach(question => {
+        const correctAnswer = question.dataset.correct;
+        question.querySelectorAll('input[type="radio"]').forEach(radio => {
+            radio.addEventListener('change', () => {
+                const feedback = question.querySelector('.feedback');
+                if (radio.value === correctAnswer) {
+                    feedback.textContent = 'Correct';
+                    feedback.className = 'feedback correct';
+                } else {
+                    feedback.textContent = 'Incorrect. Try again.';
+                    feedback.className = 'feedback incorrect';
+                }
+                feedback.style.display = 'block';
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
