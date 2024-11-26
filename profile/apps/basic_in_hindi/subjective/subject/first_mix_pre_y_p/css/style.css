@@ -1,0 +1,375 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #7F00FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E100FF, #7F00FF);
+    /* overflow: hidden; */
+}
+
+#body::-webkit-scrollbar{
+    width: 5px;
+}
+#body::-webkit-scrollbar-track{
+    background-color: inherit;
+}
+#body::-webkit-scrollbar-thumb{
+    background-color: purple;
+}
+
+
+#profile_box{
+    width: 150px;
+    height: 150px;
+    background-image: url(../IMAGES/profile_bg.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+}
+
+#profile_pic{
+    width: 90%;
+    height: 90%;
+    border: 4px solid white;
+    box-shadow: 0px 0px 10px #ccc;
+    border-radius: 50%;
+    background-color: purple;
+}
+
+
+#main_all_contact_box{
+    width: 35%;
+    height: 100vh;
+    border: 1px solid inherit;
+    margin: 0 auto;
+}
+#contact_header{
+    width: 100%;
+    height: 10%;
+    border: px solid red;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    /* border: 1px solid inherit; */
+    /* MOBILE KO LANDSCAPE ME KARNE KE LIYE HAM
+    IS hidght ko 20% nahi balki 150% rakhenge aur #all_contact_box me jaiye aur waha pe height 80% nahi balki 70% rakhe aur media query me jaha jaha margin top 20%, 30%, 3jagah par hai wo sabhi ko remove kar de............ */
+}
+#contact_header h1{
+    text-align: center;
+    font-size: 45px;
+    font-family: "Ubuntu", sans-serif;
+    padding-top: 0px;
+    color: black;
+    border: px solid green;
+
+}
+
+#all_contact_box{
+    width: 100%;
+    height: auto;
+    overflow-y: scroll;
+    padding: 10px;
+    box-shadow: 0px 0px 10px #ddd;
+    border-radius: 0px;
+    animation: ms 10s infinite;
+    -webkit-animation: ms 10s infinite;
+    -o-animation: ms 10s infinite;
+    -moz-animation: ms 10 infinite;
+    
+}
+@keyframes ms{
+    25%{border-radius: 6px;} 
+    /* 25%{border-radius: 1px solid gray;} */
+    50%{border-radius: 12px;} 
+    /* 50%{border-radius: 1px solid gray;} */
+    75%{border-radius:  18px;} 
+    /* 75%{border-radius: 1px solid gray;} */
+    10%{border-radius:  24px} 
+    /* 10%{border-radius: 1px solid gray;} */
+}
+#section{
+    width: 100%;
+    height: auto;
+    border: px solid red;
+}
+
+#all_contact_box::-webkit-scrollbar{
+    width: 5px;
+}
+#all_contact_box::-webkit-scrollbar-track{
+    background-color: inherit;
+}
+#all_contact_box::-webkit-scrollbar-thumb{
+    background-color: purple;
+}
+
+#contact{
+    width: 40%;
+    height: auto;
+    background-color: white;
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 0px 0px 10px #ccc;
+    margin: 10px 0;
+    border: px solid red;
+    float: left;
+    margin: 0px;
+    display: flex;
+    margin: 10px 12px;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+
+}
+#contact p{
+    font-size: 20px;
+    font-family: "Ubuntu", sans-serif;
+    margin: 5px 0;
+}
+
+#image{
+    border: 0px solid red; 
+    width: 20%;
+    height: 100%;
+    float: right;
+    margin-left: 0;
+    margin-top: -30px;
+    border-radius: 30%;
+    border-left: 0px solid purple;
+}
+
+/* #word_logo, #excel_logo, #ppt_logo, #access_logo{
+    width: 60px;
+    height: 60px;
+}
+#tally_logo{
+    width: 80px;
+    height: 60px;
+    margin-left: -10px;
+
+}
+#html_logo,#js_logo, #css_logo{
+    width: 80px;
+    height: 80px;
+    padding-bottom: 0;
+    margin-top: -10px;       
+    margin-left: -10px;
+
+}
+#c-logo, #oops_logo, #java_logo, #python_logo{
+    width: 70px;
+    height: 70px;
+    margin-left: -10px;
+} */
+
+
+
+
+
+
+
+#open_btn{
+    width: auto;
+    height: 30px;
+    margin-top: 0px;
+    /* margin-left: 25%; */
+    margin-left: 0px;
+    padding: 5px;
+    background-color: green;
+    color: white;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    border-radius: none;
+    cursor: pointer;
+}
+#open_btn:hover{
+    background: linear-gradient(to right, rgb(30, 1, 28)50%, #7F00FF);
+    color: white;
+    /* font-weight: bold; */
+}
+
+
+
+
+
+
+/*Responsice Coding from here*/
+@media(max-width: 1024px)
+{
+    #image{
+        margin-top: -30px;
+        width: 50px;
+        margin-right: 0px;
+    }
+    #contact_header{
+        margin-top: 50px;
+        margin-bottom: 0px;
+    }
+    #all_contact_box{
+        margin-top: 10px;
+    }
+    #contact_header h1{
+        font-size: 40px;
+        color: white;
+    }
+}
+@media(max-width: 769px)
+{
+    #main_all_contact_box{
+        width: 50%;
+    }
+    #all_contact_box{
+        margin-top: 20px;
+
+    }
+    #add_contact_box{
+        width: 50%;
+    }
+}
+@media(max-width: 568px)
+{
+    #main_all_contact_box{
+        width: 100%;
+        padding: 20px;
+    }
+    #profile_box{
+        display: block;
+    }
+    #all_contact_box{
+        margin-top: 25px;
+    }
+    
+    #add_contact_box{
+        width: 90%;
+    }
+    #profile_pic{
+        height: 75px;
+        width: 75px;
+        border: 2px solid;
+        border-color: white;
+        box-shadow: 0px 0px 10px #ccc;
+        border-radius: 50%;
+        background-color: purple;
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+    #contact_header h1{
+        font-size: 27px;
+    }
+}
+
+@media(max-width:375px)
+{
+    #profile_pic{
+        margin-left: 10px;
+        margin-top: 10px;
+        display: block;
+    }
+    /* #book_icon{
+        display: block;
+    } */
+    
+    #profile_pic{
+        height: 75px;
+        width: 75px;
+        border: 2px solid;
+        border-color: white;
+        box-shadow: 0px 0px 10px #ccc;
+        border-radius: 50%;
+        background-color: purple;
+    }
+    #contact_header{
+        margin-top: 50px;
+        margin-bottom: 0px;
+    }
+    #all_contact_box{
+        margin-top: 10px;
+    }
+    #contact_header h1{
+        font-size: 30px;
+        color: white;
+    }
+}
+@media(max-width: 321px)
+{
+    #all_contact_box{
+        margin-top: 30px;
+    }
+    #profile_pic{
+        height: 65px;
+        width: 65px;
+        margin-top: 10px;
+    }
+    #image{
+        border: 0px solid red; 
+        width: 20%;
+        height: 100%;
+        float: right;
+        margin-right: -5px;
+        margin-top: -30px;
+    
+    }
+    #contact_header{
+        margin-top: 50px;
+        margin-bottom: 0px;
+    }
+    #all_contact_box{
+        margin-top: 10px;
+    }
+    #contact_header h1{
+        font-size: 30px;
+        color: white;
+    }
+    #image i{
+        font-size: 50px;
+        margin-left: 0;
+        color: #7F00FF;
+        padding-left: 5px;
+    }
+    #word_logo, #excel_logo, #ppt_logo, #access_logo{
+        width: 40px;
+        height: 40px;
+        margin-top: 10px;
+    }
+    #image{
+        border: 0px solid red; 
+        width: 20%;
+        height: 100%;
+        float: right;
+        margin-left: 0;
+        margin-top: -30px;
+        border-radius: 10%;
+        /* border-left: 2px solid purple; */
+    }
+    /* #tally_logo{
+        width: 60px;
+        height: 40px;
+        margin-top: 10px;
+        margin-left: -50px;
+        padding-left: 50px;
+    } */
+    /* #html_logo, #js_logo, #css_logo{
+        width: 60px;
+        height: 60px;
+        padding-bottom: 0;
+        margin-top: -10px;
+        margin-left: -10px;
+    } */
+    /* #c-logo, #oops_logo, #java_logo, #python_logo{
+        width: 55px;
+        height: 55px;
+        margin-left: -15px;
+    } */
+
+
+}

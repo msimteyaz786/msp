@@ -2,8 +2,21 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MCQ Quiz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="website icon" type="jpg" href="image/mslogo.jpg" style="border-radius: 50%;">
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
     <style>
-      * {
+        * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -14,6 +27,7 @@ body {
   background: #7F00FF;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
 }
 .start-screen,
 .score-container {
@@ -51,9 +65,10 @@ button {
 
 
 #display-container {
-  background-color: #470147e5;
-  padding: 2.1em 0.5em;
-  width: 90%;
+  /* background-color: #470147e5; */
+  background-color: rgb(28, 0, 25);
+  padding: 3.1em 0.5em;
+  width: 98%;
   max-width: 37.5em;
   margin: 0 auto;
   position: absolute;
@@ -118,9 +133,9 @@ font-size: 100px;
   /* font-weight: 1000; */
   letter-spacing: 1px;
   word-spacing: 2px;
-  color: rgb(255, 4, 4);
-  font-size: 20px;
-  color: aqua;
+  font-size: 16px;
+  /* color: aqua; */
+  color: white;
   font-family: sans-serif;
 }
 .option-div {
@@ -131,7 +146,8 @@ font-size: 100px;
   text-align: left;
   outline: none;
   background: transparent;
-  border: 1px solid white;
+  /* border: 1px solid white; */
+  border: 2px solid #E100FF;
   border-radius: 0.3em;
   color: white;
   font-size: 15px;
@@ -151,7 +167,7 @@ background-color: rgba(98, 96, 96, 0.374)
   margin-top: 0.5em;
   background-color: #0a69ed;
   color: #ffffff;
-  background: #7F00FF; 
+  /* background: #7F00FF;  */
   background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);
   background: linear-gradient(to right, #E100FF, #7F00FF);
   padding: 0.7em 1.8em;
@@ -160,7 +176,7 @@ background-color: rgba(98, 96, 96, 0.374)
 }
 
 #next-button:hover{
-  border-radius: 15px;
+  /* border-radius: 15px; */
   transition: 0.5s;
     }
 
@@ -176,7 +192,9 @@ background-color: rgba(98, 96, 96, 0.374)
   background-color: green;
   color: #689f38;
   border-color: rgb(54, 250, 54);;
-  border-width: 5px;
+  border-width: 2px;
+  /* background-color: darkred; */
+  background-color: rgba(4, 48, 48, 0.988);
 }
 #user-score {
   font-size: 1.5em;
@@ -212,19 +230,6 @@ section.start-animation #checked_icon{
   }
 }
     </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-    <link rel="website icon" type="jpg" href="image/mslogo.jpg" style="border-radius: 50%;">
-    <!-- Google Font -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div class="start-screen">
@@ -262,7 +267,7 @@ section.start-animation #checked_icon{
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 <script>
-  //References
+    //References
 let timeLeft = document.querySelector(".time-left");
 let quizContainer = document.getElementById("container");
 let nextBtn = document.getElementById("next-button");
@@ -281,120 +286,152 @@ let countdown;
 //Questions and Options array
 
 const quizArray = [
+  
   {
     id: "0",
-    question: "First generation computers used languages",
-    options: ["Machine", "", "", ""],
-    correct: "",
+    question: "Computer Cannot perform",
+    options: ["Thinking", "Output", "Processing", "Input"],
+    correct: "Thinking",
   },
   {
     id: "0",
-    question: "",
-    options: ["", "", "", ""],
-    correct: "",
+    question: "Benifits of computers are :",
+    options: ["Provide accurate output either input is correct or not", "very fast and can store huge amount of data", "think about the processing", "all of these"],
+    correct: "very fast and can store huge amount of data",
   },
   {
     id: "0",
-    question: "",
-    options: ["", "", "", ""],
-    correct: "",
+    question: "The earliest calculating device is:",
+    options: ["Abacus", "Calculator", "Differece Engine", "Analytical"],
+    correct: "Abacus",
+  },{
+    id: "0",
+    question: "Abacus can perform",
+    options: ["Addition", "Subtraction", "Both Addition and Subtraction", "Multiplication"],
+    correct: "Both Addition and Subtraction",
   },
   {
     id: "0",
-    question: "",
-    options: ["", "", "", ""],
-    correct: "",
+    question: "Pascaline is also known by :",
+    options: ["Adding machine", "Division machine", "Abacus", "Difference machine"],
+    correct: "Adding machine",
   },
   {
     id: "0",
-    question: "",
-    options: ["", "", "", ""],
-    correct: "",
+    question: "Which of the following is known as father of computer?",
+    options: ["Charles Babbage", "Alan Turning", "Napier", "Dennis Ritchi"],
+    correct: "Charles Babbage",
   },
   {
     id: "0",
-    question: "",
-    options: ["", "", "", ""],
-    correct: "",
+    question: "Analytical Engine developed by :",
+    options: ["Charles Babbage", "Alan Turning", "Napier", "Dennis Ritchi"],
+    correct: "Charles Babbage",
   },
   {
     id: "0",
-    question: "",
-    options: ["", "", "", ""],
-    correct: "",
+    question: "Computer size was very large in ",
+    options: ["First Generation", "Second Generation", "Third Generation", "Fourth Generation"],
+    correct: "First Generation",
   },
   {
     id: "0",
-    question: "",
-    options: ["", "", "", ""],
-    correct: "",
+    question: "Artificial intelligence is an example of",
+    options: ["Fifth Generation of Compuer", "Fourth Generation of Compuer", "Third Generation of Compuer", "Second Generation of Compuer"],
+    correct: "Fifth Generation of Compuer",
   },
   {
     id: "0",
-    question: "",
-    options: ["", "", "", ""],
-    correct: "",
+    question: "First Generation of India is :",
+    options: ["Siddartha", "IBM - 370", "CRAY - 1", "PARAM"],
+    correct: "Siddartha",
   },
   {
     id: "0",
-    question: "",
-    options: ["", "", "", ""],
-    correct: "",
+    question: "Computer's basic architecture was developed by :",
+    options: ["John Von Neumann", "Jordan Murn", "Blaise Pascal", "Charles Babbage"],
+    correct: "John Von Neumann",
   },
   {
     id: "0",
-    question: "",
-    options: ["", "", "", ""],
-    correct: "",
+    question: "Tablet PC is a type of",
+    options: ["Micro computer", "Mini computer", "Super computer", "Mainframe computer"],
+    correct: "Micro computer",
   },
   {
     id: "0",
-    question: "",
-    options: ["", "", "", ""],
-    correct: "",
+    question: "Computer that are portable and convenient to use for users who travel, are known as :",
+    options: ["Laptops", "Super Computer", "Mainframe Computer", "Mini Computer"],
+    correct: "Laptops",
   },
   {
     id: "0",
-    question: "",
-    options: ["", "", "", ""],
-    correct: "",
+    question: "Palmtop computer is also known as ",
+    options: ["Handheld Computer", "Personal Computer", "Tabler PC", "Notebook Computer"],
+    correct: "Handheld Computer",
   },
   {
     id: "0",
-    question: "",
-    options: ["", "", "", ""],
-    correct: "",
+    question: "Which is a large and expensive computer capable of prerfoming scientific and business applications",
+    options: ["Super Computer", "mainframe Computer", "Micro Computer", "All of these"],
+    correct: "Super Computer",
   },
   {
     id: "0",
-    question: "",
-    options: ["", "", "", ""],
-    correct: "",
+    question: "First super computer developed in India is",
+    options: ["PARAM", "EPRAM", "CRAY-1", "PARAM ISHAN"],
+    correct: "PARAM",
   },
   {
     id: "0",
-    question: "",
-    options: ["", "", "", ""],
-    correct: "",
+    question: "These computers work by calculating the binary digits.",
+    options: ["Digital", "Analog", "Hybrid", "None of these"],
+    correct: "Digital",
   },
   {
     id: "0",
-    question: "",
-    options: ["", "", "", ""],
-    correct: "",
+    question: "Which types of computer are used in hospitals like ECG and DIALYSIS?",
+    options: ["Hybrid", "Digital", "Microcomputer", "None of these"],
+    correct: "Hybrid",
   },
   {
     id: "0",
-    question: "",
-    options: ["", "", "", ""],
-    correct: "",
+    question: "General purpose computers are used for",
+    options: ["Accounting", "Perform Calculation", "Creating a small database", "All of these"],
+    correct: "All of these",
   },
+
   {
     id: "0",
-    question: "सबसे पहला कंप्युटर का क्या नाम था ?",
-    options: ["ATARIS", "ENIAC", "TANDY", "इनमे  कोई नहीं"],
-    correct: "ENIAC",
+    question: "Which of the following deals with the design, construction, operation and use of robots?",
+    options: ["Robotics", "Nano Computer", "Artificial Computer", "Quantum Computer"],
+    correct: "Robotics",
   },
+  // {
+  //   id: "0",
+  //   question: "",
+  //   options: ["", "", "", ""],
+  //   correct: "",
+  // },
+  // {
+  //   id: "0",
+  //   question: "",
+  //   options: ["", "", "", ""],
+  //   correct: "",
+  // },
+  // {
+  //   id: "0",
+  //   question: "",
+  //   options: ["", "", "", ""],
+  //   correct: "",
+  // },
+  
+  // {
+  //   id: "0",
+  //   question: "",
+  //   options: ["", "", "", ""],
+  //   correct: "",
+  // },
   
   
   

@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <!-- oncontextmenu="window.alert('Not allowed.');return false;" -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MCQ Quiz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="website icon" type="jpg" href="image/mslogo.jpg" style="border-radius: 50%;">
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Set 3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            /* background-color: #f8f9fa; */
+            color: #333;
+            background: #7F00FF;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #E100FF, #7F00FF);
+            /* overflow: hidden; */
+            animation: color 12s ease-in-out infinite;
+
+        }
+        #heading{
+            width: 100%;
+            color: green;
+            text-align: center;
+            border: 2px solid purple;
+            padding-top: 0px;
+            font-size: 25px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            border-radius: 500px;
+            background-color: rgb(129, 2, 129);
+            color: white;
+            
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            /* background: #fff; */
+            background:white;
+            padding: 10px;
+            box-shadow: 0px 0px 50px #ccc;
+            border-style: solid;
+            border-width: 4px;
+            border-color: transparent;
+            border-image: linear-gradient(170deg, red, blue,Yellow,Black,brown,rgb(223, 2, 223),tan,magenta,orange,indigo,navy,green,rgb(227, 5, 42));
+            border-image-slice: 1;
+            animation: color 12s ease-in-out infinite;
+        }
+        @keyframes color{
+          0%{
+          background-position: 0 50%;
+          }
+          50%{
+          background-position: 100% 50%;
+          }
+          100%{
+          background-position: 0 50%;
+          }
+        }
+
+        .question {
+            margin-bottom: 30px;
+        }
+
+        .question h3 {
+            margin: 0;
+            font-size: 18px;
+            color: red;
+        }
+
+        .options {
+            margin-top: 10px;
+            /* color: blue; */
+        }
+
+        .options label {
+            display: block;
+            margin-bottom: 8px;
+            cursor: pointer;
+        }
+
+        .answer, .feedback {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        .answer {
+            background: #01a201;
+            color: white;
+            border-left: 4px solid #03f80b;
+        }
+
+        .feedback.correct {
+            background: #d4edda;
+            border-left: 4px solid #28a745;
+        }
+
+        .feedback.incorrect {
+            background: #f8d7da;
+            border-left: 4px solid #dc3545;
+        }
+
+        .question-buttons {
+            margin-top: 10px;
+        }
+
+        .question-buttons button {
+            padding: 8px 16px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .show-btn {
+            /* background-color: #007bff; */
+            color: #fff;
+            background-color: #b702cbf3;
+        }
+
+        .hide-btn {
+            /* background-color: #6c757d; */
+            color: #fff;
+            background-color: rgba(128, 0, 0, 0.66);
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+                margin: -15px;
+            }
+
+            .question-buttons button {
+                font-size: 12px;
+                padding: 6px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div id="heading">SET - 2</div> <BR>
+
+    <div class="question" data-correct="UPS">
+        <h3>1. Device that not only provides surge protection, but also furnishes the computer with battery backup power during a power outstage is </h3> (IBPS RRB PO Mains 2017)
+        <div class="options">
+            <label><input type="radio" name="q1" value="USB">  USB</label>
+            <label><input type="radio" name="q1" value="UPS"> UPS</label>
+            <label><input type="radio" name="q1" value="Memory">   Memory</label>
+            <label><input type="radio" name="q1" value="None of these"> None of these</label>
+        </div>
+        <div class="feedback"></div>
+        <div class="answer">Correct Answer:  UPS</div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+
+    <div class="question" data-correct="UPS">
+        <h3>2. Which is not an integral part of computer?</h3> [SBI Clerk 2012]
+        <div class="options">
+            <label><input type="radio" name="q2" value="UPS"> UPS</label>
+            <label><input type="radio" name="q2" value="Monitor"> Monitor</label>
+            <label><input type="radio" name="q2" value="CPU"> CPU</label>
+            <label><input type="radio" name="q2" value="Mouse"> Mouse</label>
+        </div>
+        <div class="feedback"></div>
+        <div class="answer">Correct Answer: UPS
+        </div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+
+    <div class="question" data-correct="bus">
+        <h3>3. The communication line between CPU, memory and peripherals is called a </h3> [Union Bank of India Clerk 2011]
+        <div class="options">
+            <label><input type="radio" name="q3" value="media"> media</label>
+            <label><input type="radio" name="q3" value="memory"> memory</label>
+            <label><input type="radio" name="q3" value="line"> line</label>
+            <label><input type="radio" name="q3" value="none of these"> none of these</label>
+        </div>
+        <div class="feedback"></div>
+        <div class="answer">Correct Answer : bus</div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+    <div class="question" data-correct="motherboard">
+        <h3>4. The main circuit board in the computer that connects the parts of the computer is the </h3> [SBI Clerk  2015]
+        <div class="options">
+            <label><input type="radio" name="q4" value="match board"> match board</label>
+            <label><input type="radio" name="q4" value="motherboard"> motherboard</label>
+            <label><input type="radio" name="q4" value="Processing"> Processing</label>
+            <label><input type="radio" name="q4" value="special board"> special board</label>
+        </div>
+        <div class="feedback"></div>
+        <div class="answer">Correct Answer: motherboard</div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+    <div class="question" data-correct="motherboard">
+        <h3>5. The CPU and memory are located in which of the following devices?</h3> [IBPS Clerk Mains 2017]
+        <div class="options">
+            <label><input type="radio" name="q5" value="output devices"> output devices</label>
+            <label><input type="radio" name="q5" value="system out"> system out</label>
+            <label><input type="radio" name="q5" value="motherboard"> motherboard</label>
+            <label><input type="radio" name="q5" value="Software"> Software</label>
+        </div>
+        <div class="feedback"></div>
+        <div class="answer">Correct Answer: motherboard</div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+    <div class="question" data-correct="All of the above">
+        <h3>6. Microproprocessors can be used to make </h3> [SBI Clerk 2010]
+        <div class="options">
+            <label><input type="radio" name="q6" value="Calculators"> Calculators</label>
+            <label><input type="radio" name="q6" value="Computers"> Computers</label>
+            <label><input type="radio" name="q6" value="Digital System"> Digital System</label>
+            <label><input type="radio" name="q6" value="All of the above"> All of the above</label>
+        </div>
+        <div class="feedback"></div>
+        <div class="answer">Correct Answer: All of the above</div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+    <div class="question" data-correct="Microchip">
+        <h3>7. A micprocessors is the brain of the computer and is also called a </h3>[RBI Grade B 2014]
+        <div class="options">
+            <label><input type="radio" name="q7" value="Software"> Software</label>
+            <label><input type="radio" name="q7" value="Microchip"> Microchip</label>
+            <label><input type="radio" name="q7" value="Microproprocessors"> Microproprocessors</label>
+            <label><input type="radio" name="q7" value="None of these"> None of these</label>
+        </div>
+        <div class="feedback"></div>
+        <div class="answer">Correct Answer: Microchip</div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+    <div class="question" data-correct="Control Signal">
+        <h3>8. The control unit controls other units by generating</h3> [IBPS Clerk 2011]
+        <div class="options">
+            <label><input type="radio" name="q8" value="Control Signal"> Control Signal</label>
+            <label><input type="radio" name="q8" value="Command Signal"> Command Signal</label>
+            <label><input type="radio" name="q8" value="Timing Signal"> Timing Signal</label>
+            <label><input type="radio" name="q8" value="None of these"> None of these</label>
+        </div>
+        <div class="feedback"></div>
+        <div class="answer">Correct Answer: Control Signal</div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+
+    <div class="question" data-correct="Control Units">
+        <h3>9. The part of compuer that coordinates all its functions, is called its.</h3> [IBPS Clerk Mains 2017]
+        <div class="options">
+            <label><input type="radio" name="q9" value="System Board"> System Board</label>
+            <label><input type="radio" name="q9" value="ROM Program"> ROM Program</label>
+            <label><input type="radio" name="q9" value="Control Units"> Control Units</label>
+            <label><input type="radio" name="q9" value="ALU"> ALU</label>
+        </div>
+        <div class="feedback"></div>
+        <div class="answer">Correct Answer: Control Units</div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+
+    <div class="question" data-correct="Control unit">
+        <h3>10. Which among the following is an important circuitry in a computer system that directs the operations of the processors</h3> [IBPS PO 2016]
+        <div class="options">
+            <label><input type="radio" name="q10" value="Control unit"> Control unit</label>
+            <label><input type="radio" name="q10" value="Memory"> Memory</label>
+            <label><input type="radio" name="q10" value="Address Bus"> Address Bus</label>
+            <label><input type="radio" name="q10" value="None of these"> None of these</label>
+        </div>
+        <div class="feedback"></div>
+        <div class="answer">Correct Answer: Control unit</div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+    <div class="question" data-correct="Control Unit">
+        <h3>11. The portion of the CPU that coordinates the activities of all the other compuer components is the  </h3> [SBI PO 2015]
+        <div class="options">
+            <label><input type="radio" name="q11" value="Arthemetic Logic Unit"> Arthemetic Logic Unit</label>
+            <label><input type="radio" name="q11" value="Control Unit"> Control Unit</label>
+            <label><input type="radio" name="q11" value="Mother Board"> Mother Board</label>
+            <label><input type="radio" name="q11" value="None of these"> None of these</label>
+        </div>
+        <div class="feedback"></div>
+        <div class="answer">Correct Answer: Control Unit</div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+    <div class="question" data-correct="third generation">
+        <h3>12. Integrated chips of IC's were started to be use from which generation of computer?</h3>[IBPS PO 2016]
+        <div class="options">
+            <label><input type="radio" name="q12" value="first generation"> first generation</label>
+            <label><input type="radio" name="q12" value="second generation"> second generation</label>
+            <label><input type="radio" name="q12" value="third generation"> third generation</label>
+            <label><input type="radio" name="q12" value="fourth generation"> fourth generation</label>
+        </div>
+        <div class="feedback"></div>
+        <!-- <div class="answer">Correct Answer: </div> -->
+        <div class="answer">Correct Answer : third generation</div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+    <div class="question" data-correct="Register">
+        <h3>13. Which among the following is a small set of data holding place that is a part of the computer processor and may hold an instruction, a storage address, or any kind of data?</h3> [IBPS RRB PO Mains 2017]
+        <div class="options">
+            <label><input type="radio" name="q13" value="Register"> Register</label>
+            <label><input type="radio" name="q13" value="Address"> Address</label>
+            <label><input type="radio" name="q13" value="Processor"> Processor</label>
+            <label><input type="radio" name="q13" value="Bus"> Bus</label>
+        </div>
+        <div class="feedback"></div>
+        <div class="answer">Correct Answer: Register</div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+
+    <div class="question" data-correct="ALU">
+        <h3>14. Which unit is a combinational, digital electonic circuit that performs arithmetic and bitwise operations on integers bunary numbers.</h3> [IBPS RRB PO Mains 2017]
+        <div class="options">
+            <label><input type="radio" name="q14" value="ALU"> ALU</label>
+            <label><input type="radio" name="q14" value="UPS"> UPS</label>
+            <label><input type="radio" name="q14" value="CPU"> CPU</label>
+            <label><input type="radio" name="q14" value="UPS"> UPS</label>
+        </div>
+        <div class="feedback"></div>
+        <div class="answer">Correct Answer: ALU</div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+
+    <div class="question" data-correct="Arithmetic Logic Unit">
+        <h3>15. Processors contain a control unit and a/an: </h3> [SSC CGL 2016]
+        <div class="options">
+            <label><input type="radio" name="q15" value="Arithmetic Logic Unit"> Arithmetic Logic Unit</label>
+            <label><input type="radio" name="q15" value="Input Unit"> Input Unit</label>
+            <label><input type="radio" name="q15" value="Control Unit"> Control Unit</label>
+            <label><input type="radio" name="q15" value="None of these"> None of these</label>
+        </div>
+        <div class="feedback"></div>
+        <div class="answer">Correct Answer: Arithmetic Logic Unit</div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+
+    <div class="question" data-correct="Arithmetic Logic Unit">
+        <h3>16.  What does ALU in computing denotes?</h3>[IBPS Clerk 2014] 
+        <div class="options">
+            <label><input type="radio" name="q16" value="Arithmetic Logic Unit"> Arithmetic Logic Unit</label>
+            <label><input type="radio" name="q16" value="Algorithm Logic Unit"> Algorithm Logic Unit</label>
+            <label><input type="radio" name="q16" value="Application and Logic Unit"> Application and Logic Unit</label>
+            <label><input type="radio" name="q16" value="Arthemetic Legel Unit"> Arthemetic Legel Unit</label>
+        </div>
+        <div class="feedback"></div>
+        <div class="answer">Correct Answer: Arithmetic Logic Unit</div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+
+    <div class="question" data-correct="ALU">
+        <h3>17. Which part of the computer is used for calculating and comparing? </h3>  [IBPS Clerk 2013]
+        <div class="options">
+            <label><input type="radio" name="q17" value="Disc Unit"> Disc Unit</label>
+            <label><input type="radio" name="q17" value="Medem"> Medem</label>
+            <label><input type="radio" name="q17" value="ALU"> ALU</label>
+            <label><input type="radio" name="q17" value="Magnetic disk"> Magnetic disk</label>
+        </div>
+        <div class="feedback"></div>
+        <div class="answer">Correct Answer: ALU</div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+
+    <div class="question" data-correct="CPU">
+        <h3>18. Which unit fo computer helps in communication between the memory and the arithmetic Logical unit?</h3> [IBPS RRB PO main 2017]
+        <div class="options">
+            <label><input type="radio" name="q18" value="CCU"> CCU</label>
+            <label><input type="radio" name="q18" value="CPU"> CPU</label>
+            <label><input type="radio" name="q18" value="CMU"> CMU</label>
+            <label><input type="radio" name="q18" value="UPS"> UPS</label>
+        </div>
+        <div class="feedback"></div>
+        <div class="answer">Correct Answer: CPU</div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+
+    <div class="question" data-correct="To compare numbers">
+        <h3>19. What is the responsibility of the ogical unit in the CPU of a computer?</h3>[IBPS Clerk 2015] 
+        <div class="options">
+            <label><input type="radio" name="q19" value="To do maths work"> To do maths work</label>
+            <label><input type="radio" name="q19" value="To produce result"> To produce result</label>
+            <label><input type="radio" name="q19" value="To compare numbers"> To compare numbers</label>
+            <label><input type="radio" name="q19" value=""> None of these</label>
+        </div>
+        <div class="feedback"></div>
+        <div class="answer">Correct Answer: To compare numbers</div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+
+    <div class="question" data-correct="Arthmetic/Logic">
+        <h3>20. The CPU comprises of controls, memory and which units?</h3>[SBI PO 2013] 
+        <div class="options">
+            <label><input type="radio" name="q20" value="Arthmetic/Logic"> Arthmetic/Logic</label>
+            <label><input type="radio" name="q20" value="Output"> Output</label>
+            <label><input type="radio" name="q20" value="Input"> Input</label>
+            <label><input type="radio" name="q20" value="None of these"> None of these</label>
+        </div>
+        <div class="feedback"></div>
+        <div class="answer">Correct Answer: Arthmetic/Logic</div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+
+    <div class="question" data-correct="CPU">
+        <h3>21.  What is the brain of the Computer?</h3> [SSC CGL 2016]
+        <div class="options">
+            <label><input type="radio" name="q21" value="CPU"> CPU</label>
+            <label><input type="radio" name="q21" value="Mouse"> Mouse</label>
+            <label><input type="radio" name="q21" value="Printermainfreames"> Printermainfreames</label>
+            <label><input type="radio" name="q21" value="keyboard"> keyboard</label>
+        </div>
+        <div class="feedback"></div>
+        <div class="answer">Correct Answer: CPU</div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+
+    <div class="question" data-correct="CPU">
+        <h3>22. This component is required to process data into information and consists of integrated circuits.</h3>  [SBI Clerk 2011]
+        <div class="options">
+            <label><input type="radio" name="q22" value="RAM"> RAM</label>
+            <label><input type="radio" name="q22" value="ROM"> ROM</label>
+            <label><input type="radio" name="q22" value="CPU"> CPU</label>
+            <label><input type="radio" name="q22" value="None of these"> None of these</label>
+        </div>
+        <div class="feedback"></div>
+        <div class="answer">Correct Answer: CPU</div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+
+    <div class="question" data-correct="Input">
+        <h3>22. Information that comes from external source and fed into computer software is called.</h3> [IBPS RRB PO Main 2017]
+        <div class="options">
+            <label><input type="radio" name="q22" value="Input"> Input</label>
+            <label><input type="radio" name="q22" value="Output"> Output</label>
+            <label><input type="radio" name="q22" value="Process"> Process</label>
+            <label><input type="radio" name="q22" value="None of these"> None of these</label>
+        </div>
+        <div class="feedback"></div>
+        <div class="answer">Correct Answer: Input </div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+
+    <div class="question" data-correct="(A)">
+        <h3>23. Which of the following  is not responsible for the performance of the computer?</h3> [IBPS Clerk Mains 2017] 
+        <div class="options">
+            <label><input type="radio" name="q23" value="(A)"> Numbers of keys in the keyboard</label>
+            <label><input type="radio" name="q23" value="Memory in the video or graphics word"> Memory in the video or graphics word</label>
+            <label><input type="radio" name="q23" value="Formate of the video/graphics word"> Formate of the video/graphics word</label>
+            <label><input type="radio" name="q23" value="None of these"> None of these</label>
+        </div>
+        <div class="feedback"></div>
+        <div class="answer">Correct Answer: (A)</div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+
+    <div class="question" data-correct="System Unit">
+        <h3>24. The components that process data are located in which of the following? </h3> [IBPS Clerk Mains 2017] 
+        <div class="options">
+            <label><input type="radio" name="q24" value="System Unit"> System Unit</label>
+            <label><input type="radio" name="q24" value="Input Devices"> Input Devices</label>
+            <label><input type="radio" name="q24" value="Storage COmponent"> Storage COmponent</label>
+            <label><input type="radio" name="q24" value="None of these"> None of these</label>
+        </div>
+        <div class="feedback"></div>
+        <div class="answer">Correct Answer: System Unit</div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+
+    <div class="question" data-correct="System Unit">
+        <h3>25. Which of the following is metal or plastic case that holds all the physical parts of the computer?</h3> [IBPS Main Clerk Main 2017]
+        <div class="options">
+            <label><input type="radio" name="q25" value="System Unit"> System Unit</label>
+            <label><input type="radio" name="q25" value="Input Devices"> Input Devices</label>
+            <label><input type="radio" name="q25" value="Storage COmponent"> Storage COmponent</label>
+            <label><input type="radio" name="q25" value="None of these"> None of these</label>
+        </div>
+        <div class="feedback"></div>
+        <div class="answer">Correct Answer: System Unit</div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+
+    <!-- <div class="question" data-correct="">
+        <h3></h3> 
+        <div class="options">
+            <label><input type="radio" name="q1" value=""> </label>
+            <label><input type="radio" name="q1" value=""> </label>
+            <label><input type="radio" name="q1" value=""> </label>
+            <label><input type="radio" name="q1" value=""> </label>
+        </div>
+        <div class="feedback"></div>
+        <div class="answer">Correct Answer: </div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+
+    <div class="question" data-correct="">
+        <h3></h3> 
+        <div class="options">
+            <label><input type="radio" name="q1" value=""> </label>
+            <label><input type="radio" name="q1" value=""> </label>
+            <label><input type="radio" name="q1" value=""> </label>
+            <label><input type="radio" name="q1" value=""> </label>
+        </div>
+        <div class="feedback"></div>
+        <div class="answer">Correct Answer: </div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="question" data-correct="">
+        <h3></h3> 
+        <div class="options">
+            <label><input type="radio" name="q1" value=""> </label>
+            <label><input type="radio" name="q1" value=""> </label>
+            <label><input type="radio" name="q1" value=""> </label>
+            <label><input type="radio" name="q1" value=""> </label>
+        </div>
+        <div class="feedback"></div>
+        <div class="answer">Correct Answer: </div>
+        <div class="question-buttons">
+            <button class="show-btn" onclick="toggleAnswer(this, true)">Show Answer</button>
+            <button class="hide-btn" onclick="toggleAnswer(this, false)">Hide Answer</button>
+        </div>
+    </div> -->
+
+
+    
+
+</div>
+
+<script>
+    // Show or hide the correct answer
+    function toggleAnswer(button, show) {
+        const question = button.closest('.question');
+        const answer = question.querySelector('.answer');
+        answer.style.display = show ? 'block' : 'none';
+    }
+
+    // Add event listeners to all radio buttons to check the answer
+    document.querySelectorAll('.question').forEach(question => {
+        const correctAnswer = question.dataset.correct;
+        question.querySelectorAll('input[type="radio"]').forEach(radio => {
+            radio.addEventListener('change', () => {
+                const feedback = question.querySelector('.feedback');
+                if (radio.value === correctAnswer) {
+                    feedback.textContent = 'Correct';
+                    feedback.className = 'feedback correct';
+                } else {
+                    feedback.textContent = 'Incorrect. Try again.';
+                    feedback.className = 'feedback incorrect';
+                }
+                feedback.style.display = 'block';
+            });
+        });
+    });
+</script>
+
+</body>
+</html>

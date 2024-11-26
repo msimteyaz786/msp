@@ -236,11 +236,11 @@ section.start-animation #checked_icon{
       <button id="start-button">Start </button>
     </div>
     <div id="display-container">
-      <h2 id="heading">SET 2</h2>
+      <h2 id="heading">SET 3</h2>
       <div class="header">
         
         <div class="number-of-count">
-          <span class="number-of-question">1 of 100 questions</span>
+          <span class="number-of-question">1 of 30 questions</span>
         </div>
         <!-- <div class="timer-div">
           <ion-icon name="alarm" id="timer-icon"></ion-icon>
@@ -286,162 +286,137 @@ let countdown;
 //Questions and Options array
 
 const quizArray = [
+  
   {
     id: "0",
-    question: "Which of the following is metal or plastic case that holds all the physical parts of the computer? (IBPS Clerk Mains 2017)",
-    options: ["System Unit", "Micro processor", "CPU", "Mainframe"],
-    correct: "System Unit",
+    question: "Computer gets ________ with the help of mouse, joystick or keyboard",
+    options: ["input", "output", "insert", "delete"],
+    correct: "input",
   },
   {
     id: "0",
-    question: "Which of the following items is not used in Local Area Network? (SSC CGL 2012) ",
-    options: ["Interface", "Computer", "Cable", "Modem"],
-    correct: "Computer",
+    question: "Which key is also known as toggle keys?",
+    options: ["Num Lock", "Caps Lock", "Both", "None of these"],
+    correct: "Both",
   },
   {
     id: "0",
-    question: "What is m-commerce? (SSC CGL 2012)",
-    options: ["Machine Commerce", "Mobile Commerce", "Money Commerce", "Marketing Commerce"],
-    correct: "Mobile Commerce",
+    question: "To moeve to the beginnign of a line of text, press the _______ keys.",
+    options: ["Enter", "Home", "page up", "Shift"],
+    correct: "Enter",
   },
   {
     id: "0",
-    question: "An alternate name for the completely interconnected network topology is (SSC CGL 2012)",
-    options: ["Mesh", "Star", "Tree", "Ring"],
-    correct: "Mesh",
+    question: "The _____ keys will launch the start button.",
+    options: ["Window", "Esc", "Shortcut", "Shift"],
+    correct: "Window",
   },
   {
     id: "0",
-    question: "What types of information  system would be recognised by digital circuits? (SSC CGL 2013)",
-    options: ["Binary System", "Hexadecimal System", "Both", "None of these"],
-    correct: "Binary System",
+    question: "Spacebar is used to ",
+    options: ["Moving next line", "All the these", "Giving Space", "Deleting Space"],
+    correct: "Moving next line",
+  },
+  
+  {
+    id: "0",
+    question: "A barcode is a example of ",
+    options: ["Input device", "Output device", "Storage device", "processing device"],
+    correct: "Input device",
   },
   {
     id: "0",
-    question: "Identify the FIFO structure amone the following : (SSC CGL 2013)",
-    options: ["Stack", "Queue", "De-Queue", "Array"],
-    correct: "Stack",
+    question: "Large amounts of cheques are processed by using",
+    options: ["MICR", "OMR", "OCR", "All of these"],
+    correct: "MICR",
   },
   {
     id: "0",
-    question: "CPU scheduler is also known as (SSC CGL 2016)",
-    options: ["Short-term shedular", "Job shedular", "Resouce shedular", "None"],
-    correct: "Short-term shedular",
+    question: "Which of the following device which reconnises physical traits of an individual?",
+    options: ["Biometric Sensor", "Bard Code", "smart Card", "MICR"],
+    correct: "Biometric Sensor",
   },
   {
     id: "0",
-    question: "Data in database at a particular point of time is called as? (SSC CGL 2016)",
-    options: ["Extension", "Intension", "Back-up", "Application"],
-    correct: "Extension",
-  },
-  // {
-  //   id: "0",
-  //   question: "",
-  //   options: ["", "", "", ""],
-  //   correct: "",
-  // },
-  // {
-  //   id: "0",
-  //   question: "",
-  //   options: ["", "", "", ""],
-  //   correct: "",
-  // },
-  // {
-  //   id: "0",
-  //   question: "",
-  //   options: ["", "", "", ""],
-  //   correct: "",
-  // },
-  // {
-  //   id: "0",
-  //   question: "",
-  //   options: ["", "", "", ""],
-  //   correct: "",
-  // },
-  // {
-  //   id: "0",
-  //   question: "",
-  //   options: ["", "", "", ""],
-  //   correct: "",
-  // },
-  {
-    id: "0",
-    question: "What is the brain of Computer? (SSC CGL 2016)",
-    options: ["CPU", "Keyboard", "Mouse", "Printer"],
-    correct: "CPU",
+    question: "An example of periphecal equipment is ",
+    options: ["Printer", "Spreadsheet", "CPU", "None of these"],
+    correct: "Printer",
   },
   {
     id: "0",
-    question: "Which of the following is not an operating system (SSC CGL 2016)",
-    options: ["Opera", "Android", "Vista", "iOS"],
-    correct: "Opera",
+    question: "Dot matrix is a type of",
+    options: ["bus", "tap", "printer", "disk"],
+    correct: "bus",
   },
   {
     id: "0",
-    question: "Who among the following introduced the world'd first laptop computer in the marker? (SSC CGL 2014)",
-    options: ["Epson", "Hewlett-Packard", "Both", "None"],
-    correct: "Epson",
+    question: "Drum printer is an example of",
+    options: ["Output", "Input", "Storage", "Processing"],
+    correct: "Output",
   },
   {
     id: "0",
-    question: "Which was the first electronic computer constructed at the Moore School of Enginnering? (SSC CGL 2013)",
-    options: ["TCP/IP", "HTTP", "SMTP", "SLIP"],
-    correct: "TCP/IP",
+    question: "Larger printer belongs to",
+    options: ["Page Printer", "Line Printer", "Band Printer", "None of these"],
+    correct: "Page Printer",
   },
   {
     id: "0",
-    question: "A Group 'Ware' is a (SSC CGL 2011)",
-    options: ["Hardware", "Software", "Firmware", "Network"],
-    correct: "Software",
+    question: "All of the following are example of input device except",
+    options: ["Printer", "Keyboard", "Scanner", "Mouse"],
+    correct: "Printer",
   },
   {
     id: "0",
-    question: "In which of the following areas, a spreadsheet software is more useful? (SSC CGL 2011)",
-    options: ["Statistics", "Psychology", "Publishing", "Message sending"],
-    correct: "Statistics",
+    question: "Which is used to connect audio and video multimedia devices like video camera.",
+    options: ["Firewire", "USB", "Serial port", "USB"],
+    correct: "Firewire",
   },
   {
     id: "0",
-    question: "The first computer made available for commercial use was (SSC CGL 2011)",
-    options: ["UNIVAC", "EDSAC", "ENIAC", "MANIAC"],
-    correct: "UNIVAC",
+    question: "All of the following are examples of input device except",
+    options: ["Printer", "keyboard", "Mouse", "Scanner"],
+    correct: "Printer",
   },
+  
   {
     id: "0",
-    question: "Window 7, the latest operating system from Microsoft corporation has _____ Indian language fonts. (SSC CGL 2010)",
-    options: ["14", "26", "37", "49"],
-    correct: "49",
+    question: "Which is the generally used in appliation like ATM, hospitals, airline reservation etc.",
+    options: ["Touch screen", "Joystick", "Trackball", "Light Pen"],
+    correct: "Touch screen",
   },
+  
   {
     id: "0",
-    question: "'C' Language is a (SSC CGL 2010)",
-    options: ["High Level Language", "Low Level Language", "Machine Level Language", "Assemble Lavel Language"],
-    correct: "High Level Language",
+    question: "A device, which is used for making drawing, graphics and for menu selection.",
+    options: ["Light pen", "Mouse", "Touch screen", "keyboard"],
+    correct: "Light pen",
   },
+  
   {
     id: "0",
-    question: "Processor's speed of a computer is measured in (SSC CGL 2010)",
-    options: ["MIPS", "BPS", "Baud", "Hertz"],
-    correct: "MIPS",
+    question: "A joystick allows movements in which angle?",
+    options: ["60 deg", "90 deg", "30 deg", "360 deg"],
+    correct: "360 deg",
   },
+  
   {
     id: "0",
-    question: "Which of the following countries has recently become the third largest market for Twitter? (SSC CGL 2010)",
-    options: ["Brazil", "China", "India", "Indonesia"],
-    correct: "Brazil",
+    question: "What types of devices is a computer mouse",
+    options: ["Input", "Output", "Software", "Storage"],
+    correct: "Input",
   },
+  
   {
     id: "0",
-    question: "The messenger satellite launched by NASA is to study (SSC CGL 2010)",
-    options: ["Mercury", "Venus", "Satrun", "Jupiter"],
-    correct: "Mercury",
+    question: "Pointing device includes the following except",
+    options: ["Keyboard", "Trackball", "Joystick", "Mouse"],
+    correct: "Keyboard",
   },
-  // {
-  //   id: "0",
-  //   question: "",
-  //   options: ["", "", "", ""],
-  //   correct: "",
-  // },
+  
+
+  
+  
   
   
   
